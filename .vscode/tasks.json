@@ -1,0 +1,28 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Run Python CP",
+            "type": "shell",
+            "command": "python3", // Use "python3" for macOS/Linux
+            "args": [
+                "${relativeFile}",
+                "<",
+                "input.txt",
+                ">",
+                "output.txt"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "silent",
+                 "focus": false,       // Do not move keyboard focus to terminal
+                "panel": "shared",    // Reuse the same terminal instance
+                "clear": true  
+            },
+            "problemMatcher": []
+        }
+    ]
+}
