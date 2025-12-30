@@ -45,6 +45,10 @@ input.txt|output.txt
 - [`Arrays/Medium/nextPermutation.py`](Arrays/Medium/nextPermutation.py)
 - [`Arrays/Medium/reArrange.py`](Arrays/Medium/reArrange.py)
 - [`Arrays/Medium/twoSum.py`](Arrays/Medium/twoSum.py)
+- [`Arrays/Medium/matrixZeroes`](Arrays/Medium/matrixZeroes.py)
+- [`Arrays/Medium/RotateMatrix.py`](Arrays/Medium/RotateMatrix.py)
+- [`Arrays/Medium/spiralMatrix.py`](Arrays/Medium/spiralMatrix.py)
+- [`Arrays/Medium/SubArraysWithSum.py`](Arrays/Medium/subArraysWithSum.py)
 
 ### Basic Hashing
 - [`Basic Hashing/frequency.py`](Basic%20Hashing/frequency.py)

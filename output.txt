@@ -1,1 +1,1 @@
-Matrix After Zeroes:  [[0, 0, 0, 0], [0, 4, 5, 0], [0, 3, 1, 0]]
+count of Subarrays with the target 3:  3
