@@ -50,6 +50,16 @@ input.txt|output.txt
 - [`Arrays/Medium/spiralMatrix.py`](Arrays/Medium/spiralMatrix.py)
 - [`Arrays/Medium/SubArraysWithSum.py`](Arrays/Medium/subArraysWithSum.py)
 
+### Array - Hard
+- [`Arrays/Hard/threesum.py`](Arrays/Hard/threesum.py)
+- [`Arrays/Hard/foursum.py`](Arrays/Hard/foursum.py)
+- [`Arrays/Hard/majorityElement2.py`](Arrays/Hard/majorityElement2.py)
+- [`Arrays/Hard/PascalsTriangle.py`](Arrays/Hard/PascalsTriangle.py)
+- [`Arrays/Hard/LargestSubarrayWirhZerosum.py`](Arrays/Hard/LargestSubarrayWirhZerosum.py)
+- [`Arrays/Hard/numberOfSubarrayswithxork.py`](Arrays/Hard/numberOfSubarrayswithxork.py)
+- [`Arrays/Hard/mergeIntervals.py`](Arrays/Hard/mergeIntervals.py)
+
+
 ### Basic Hashing
 - [`Basic Hashing/frequency.py`](Basic%20Hashing/frequency.py)
 - [`Basic Hashing/highestLowest.py`](Basic%20Hashing/highestLowest.py)
