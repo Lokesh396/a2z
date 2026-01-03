@@ -13,6 +13,24 @@ if USE_FILE:
     sys.stdin = open(os.path.join(BASE_DIR, "input.txt"), "r")
     sys.stdout = open(os.path.join(BASE_DIR, "output.txt"), "w")
 def rearrangeArray(nums):
+    """
+    
+    Given an array which contains positive and negatives, we need to arrange the elements in such a way
+    that it starts with a positive and contains positive and negative alternatively.
+
+    Algorithm:
+    - if we encounter a positve element we keep that pos which is 0 and increment by 2
+    - if we encounter a negative element we keep that neg which is 1 and increment by 2
+
+    Args:
+        nums: Iput arrays with positive and negative elements.
+
+    Returns: Array will be rearranged with positive and negatives.
+    Time Complexity: The time complexiyty of the algorithm is O(n)
+
+    Space Complexity: o(n), takes a out array to store all the elements.
+
+    """
     pos = 0
     neg = 1
     out = [0 for i in range(len(nums))]

@@ -1,7 +1,7 @@
 import sys
 import os
 from pathlib import Path
-
+from typing import List
 # Fast I/O and Recursion Setup
 sys.setrecursionlimit(2000)
 input = sys.stdin.readline
@@ -12,7 +12,27 @@ if USE_FILE:
     BASE_DIR = Path(__file__).resolve().parents[2]
     sys.stdin = open(os.path.join(BASE_DIR, "input.txt"), "r")
     sys.stdout = open(os.path.join(BASE_DIR, "output.txt"), "w")
-def maxSubArray( nums):
+
+def maxSubArray( nums:List[int])->int:
+    """
+    
+    Given an array, return the maximum subarray sum.
+
+    Algorithm:
+    - The algorithm is based on kadane's. we will add every element to our running sum, every time
+    it becomes less than zero we turn it back to 0.
+    - compare the running sum with the global maximum.
+
+    Args:
+        nums: Input array.
+
+    Returns: returns the maximum subarray sum
+
+    Time Complexity: O(n) linear traversal of the array.
+
+    Space Complexity: O(1) no extra space is required.s
+
+    """
     csum = 0
     gmax = -float('inf')
     for i in range(len(nums)):

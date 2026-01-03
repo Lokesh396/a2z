@@ -13,7 +13,26 @@ if USE_FILE:
     sys.stdin = open(os.path.join(BASE_DIR, "input.txt"), "r")
     sys.stdout = open(os.path.join(BASE_DIR, "output.txt"), "w")
 def nextPermutation(nums):
+    """
+    
+    Given an permuation of the array we need to print the next permuatation of that array.
 
+    Algorithm:
+    - we traverse from the left and find the index where we can see a dip.
+    - if that index is -1, that means that the last permuatation of the array, and simply reverse and return
+    - we need to find the element which is greater than the element at the index and swap them
+    and simply reverse the elements from that index.
+
+    Args:
+        nums: input array
+    
+    Returns: next permutation will be there inplace.
+
+    Time Complexity: O(n), traversals and reverse will take at max o(n) time
+
+    Space Complexity: O(1), no extra space is required
+
+    """
     n = len(nums)
     ind = -1
     for i in range(n-2, -1, -1):

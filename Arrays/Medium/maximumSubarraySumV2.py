@@ -13,6 +13,25 @@ if USE_FILE:
     sys.stdin = open(os.path.join(BASE_DIR, "input.txt"), "r")
     sys.stdout = open(os.path.join(BASE_DIR, "output.txt"), "w")
 def maxSubArray( nums):
+    """
+    
+    Given an array, return the maximum subarray.
+
+    Algorithm:
+    - The algorithm is based on kadane's. we will add every element to our running sum, every time
+    it becomes less than zero we turn it back to 0.
+    - compare the running sum with the global maximum and store the indexes..
+
+    Args:
+        nums: Input array.
+
+    Returns: returns the maximum subarray sum
+
+    Time Complexity: O(n) linear traversal of the array.
+
+    Space Complexity: O(1) no extra space is required.s
+
+    """
     csum = 0
     arrStart , arrEnd = -1 , -1
     start = 0
@@ -28,7 +47,7 @@ def maxSubArray( nums):
 
         if csum < 0:
             csum = 0
-            start = i
+            start = i + 1
 
     
     return [arrStart, arrEnd]

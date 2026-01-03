@@ -13,6 +13,24 @@ if USE_FILE:
     sys.stdin = open(os.path.join(BASE_DIR, "input.txt"), "r")
     sys.stdout = open(os.path.join(BASE_DIR, "output.txt"), "w")
 def longestConsecutive(nums):
+    """
+    Given an array of elements return the length of the maximum consecutive sequence.
+
+    Algorithm:
+    - we convert the list to set, every time we see a element will check whether it is the start of the
+    sequence or the already part of the sequence.
+    - we will return the maximum length of the sequence.
+
+    Args:
+        nums: Input array
+    
+    Returns: returns the length of max consecutive sequence.
+
+    Time Complexity: O(n) at most two traversals.
+
+    Space Complexity: O(n) we use set data structure.
+    
+    """
     if len(nums) == 0:
         return 0        
     nums = set(nums)
