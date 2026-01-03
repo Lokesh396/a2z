@@ -14,16 +14,34 @@ if USE_FILE:
     sys.stdout = open(os.path.join(BASE_DIR, "output.txt"), "w")
 
 def remove_duplicates(arr):
+    """
+    Remove duplicates from a sorted list in-place using a two-pointer sweep.
 
+    Algorithm:
+    - Keep `l` at the position of the last unique element and `r` as a scanner.
+    - When `arr[l]` differs from `arr[r]`, advance `l` and copy the new unique
+      value from `r` into `arr[l]`.
+    - After one pass, the first `l + 1` positions store the unique values.
+
+    Args:
+        arr: Sorted list of hashable items with possible duplicates.
+
+    Returns:
+        Index of the last unique element (equivalently, unique count minus one).
+
+    Time Complexity: O(n) for a single traversal of the list.
+    Space Complexity: O(1) extra space; the list is modified in-place.
+    """
     l, r = 0, 0
 
     while r < len(arr):
         if arr[l] != arr[r]:
+            print(f"left: {l}, right: {r}, arr[l]: {arr[l]}, arr[r]: {arr[r]}")
             arr[l+1] = arr[r]
             l += 1
         
         r += 1
-    
+    print(arr)
     return l
 
 def main():

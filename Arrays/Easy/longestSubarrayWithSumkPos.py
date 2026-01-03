@@ -15,6 +15,27 @@ if USE_FILE:
 
 
 def optimal(arr, k):
+    """
+    
+    Given an array and sum k, we need to return the maximum length of the array that sums to k.
+
+    Algorithm:
+     - we will add the current to the sum, in any point of time if sum becomes greater than k,
+    we will subract from left.
+
+    Args:
+        arr: Input array
+        k: target sum
+    
+    Returns:
+        It will the return the length of maximum subarray with k.
+    
+    Time Complexity: O(n) two pointers l and r traverse through the array at most 2n times
+
+    Space Complexity: O(1) no extra space is required.
+        
+    """
+
     n = len(arr)
     left, right = 0, 0
     maxLen = 0

@@ -14,10 +14,43 @@ if USE_FILE:
     sys.stdout = open(os.path.join(BASE_DIR, "output.txt"), "w")
 
 def appendValue(output, val):
+    """
+    
+    Helper function to store the unique elements.
+
+    Args:
+        output: Array that stores the unique elements.
+        val: value that needed to be added in to the output.
+    """
+
     if len(output) == 0 or  output[-1] != val:
         output.append(val)
+
 def sortedArray(a, b):
-    # Write your code here
+    """
+    
+    Given two sorted arrays and return the union of these arrays.
+
+    Algorithm:
+    - Given the arrays the arrays already sorted, we can use the `merge` technique to
+    store the union of elements.
+    - Before adding each number to the output arrays we need to make sure it is not
+    already `presnet` in the array.
+
+    Args:
+        a: array 1
+        b: array 2
+    
+    Returns:
+        out: Returns the union of araray `a` and `b`.
+
+    Time Complexity: O(m+n) given length of array a is `m` and b is `n`.
+
+    Space Complexity: O(m+n) if both the array elements are unique this is
+    the maximum space required.
+
+    """
+
     m = len(a)
     n = len(b)
 

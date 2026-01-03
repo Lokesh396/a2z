@@ -1,1 +1,1 @@
-Max Product: 18899
+The length of the longest Subarray with sum K:  4

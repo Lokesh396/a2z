@@ -15,6 +15,30 @@ if USE_FILE:
 
 
 def sumEqualsK(arr, k):
+    """
+    
+    Given an array and sum k, we need to return the maximum length of the array that sums to k.
+
+    Algorithm:
+    - Suppose we are at x, and the sum is csum, if we need to whether k exists upto that array,
+    we need to check does csum-x present in hashmap. as csum -x + x = csum.
+    - we store the csum in to the dictinoary if it is not already present it the dictionaty as
+    we need to find the maximum length.
+
+    Args:
+        arr: input array may contains negatives.
+        k: target sum
+
+    Returns:
+        Return the maximum lenght of the subarray with sum k
+    
+    Time Complexity: O(n) Single iteration of the array, as the amoritized complexity of
+    lookup and insertion in hashmap is O(1).
+
+    Space Complexity: O(n) If the array contains all the unique elements we need to store 
+    the sum of all elements up to last index.
+
+    """
     preMap = defaultdict(int)
     csum = 0
     maxLen = 0

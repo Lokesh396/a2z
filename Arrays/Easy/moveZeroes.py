@@ -13,6 +13,21 @@ if USE_FILE:
     sys.stdin = open(os.path.join(BASE_DIR, "input.txt"), "r")
     sys.stdout = open(os.path.join(BASE_DIR, "output.txt"), "w")
 def moveZeroes(nums):
+        """
+        Move all the zeroes in the array to the last
+
+        Algorithm:
+        - we need to find the first zero index and place pointer `l` at that position
+        - If we encounter any non zero element and the `l` has a valid zero index
+        swap elements at `l` and `r`.
+
+        Args:
+            nums: input array that contains zero elements.
+        
+        Time Complexity: O(n) Two pointer approach single iteration.
+        
+        Space Complexity: O(1) Only some variables.
+        """
         l = -1
         r = 0
         while r < len(nums):

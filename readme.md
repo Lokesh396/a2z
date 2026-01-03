@@ -24,7 +24,7 @@ input.txt|output.txt
 - [`Arrays/Easy/isSorted.py`](Arrays/Easy/isSorted.py)
 - [`Arrays/Easy/largestElement.py`](Arrays/Easy/largestElement.py)
 - [`Arrays/Easy/linearSearch.py`](Arrays/Easy/linearSearch.py)
-- [`Arrays/Easy/longestSubarrayWithSumk(pos).py`](Arrays/Easy/longestSubarrayWithSumk(pos).py)
+- [`Arrays/Easy/longestSubarrayWithSumkPos.py`](Arrays/Easy/longestSubarrayWithSumkPos.py)
 - [`Arrays/Easy/longestSubarraywithSumK.py`](Arrays/Easy/longestSubarraywithSumK.py)
 - [`Arrays/Easy/maxConsecutiveOnes.py`](Arrays/Easy/maxConsecutiveOnes.py)
 - [`Arrays/Easy/moveZeroes.py`](Arrays/Easy/moveZeroes.py)
