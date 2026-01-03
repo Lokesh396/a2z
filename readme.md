@@ -58,6 +58,11 @@ input.txt|output.txt
 - [`Arrays/Hard/LargestSubarrayWirhZerosum.py`](Arrays/Hard/LargestSubarrayWirhZerosum.py)
 - [`Arrays/Hard/numberOfSubarrayswithxork.py`](Arrays/Hard/numberOfSubarrayswithxork.py)
 - [`Arrays/Hard/mergeIntervals.py`](Arrays/Hard/mergeIntervals.py)
+- [`Arrays/Hard/mergeSortedArrays.py`](Arrays/Hard/mergeSortedArrays.py)
+- [`Arrays/Hard/repeatingMissingNumber.py`](Arrays/Hard/repeatingMissingNumber.py)
+- [`Arrays/Hard/countInversions.py`](Arrays/Hard/countInversions.py)
+- [`Arrays/Hard/reversePairs.py`](Arrays/Hard/reversePairs.py)
+- [`Arrays/Hard/maximumProductSubarray.py`](Arrays/Hard/maximumProductSubarray.py)
 
 
 ### Basic Hashing
