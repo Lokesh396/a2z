@@ -13,6 +13,21 @@ if USE_FILE:
     sys.stdin = open(os.path.join(BASE_DIR, "input.txt"), "r")
     sys.stdout = open(os.path.join(BASE_DIR, "output.txt"), "w")
 def rotate(matrix):
+    """
+    Given a matrix of size m *n, rotate the matrix by 90 degrees.
+
+    Algorithm:
+    - Transpose the matrix and reverse each row.
+
+    Args:
+        matrix: input array thats need to rotated
+    
+    Returns: None rotates the matrix in place.
+
+    Time Complexity: O(m*n) to transpose and reverse.
+
+    Space Complexity; O(1) no extra space is required.
+    """
     m = len(matrix)
     n = len(matrix[0])
 

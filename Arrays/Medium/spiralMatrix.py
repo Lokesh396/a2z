@@ -14,6 +14,28 @@ if USE_FILE:
     sys.stdout = open(os.path.join(BASE_DIR, "output.txt"), "w")
 
 def spiralOrder(matrix):
+    """
+    
+    Given the matrix, print the matrix in spiral order.
+
+    Algorithm:
+          l-->r
+        t 1 2 3
+          4 5 6
+        b 7 8 9
+    - we traverse the array from left to right, top is constant, 
+    then top to bottom right is constant,
+    right to left bottom is constant and bottom to top left is constant
+
+    Args:
+        matrix: input matrix.
+
+    Returns: returns the output in spiral order
+
+    Time Complexity: O(m*n) iterating through the array.
+
+    Space Complexity: O(m*n) storing the output array.
+    """
     m = len(matrix)
     n = len(matrix[0])
     left, top, right, bottom = 0, 0, n-1, m-1
