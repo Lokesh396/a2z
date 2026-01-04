@@ -6,6 +6,7 @@ Curated data-structures/algorithms solutions from striver a2z dsa sheet.
 - [Repository layout](#repository-layout)
 - [Arrays — Easy](#arrays--easy)
 - [Arrays — Medium](#arrays--medium)
+- [Binary Search](#binary-search)
 - [Basic Hashing](#basic-hashing)
 - [Sortings](#sortings)
 
@@ -14,6 +15,8 @@ Curated data-structures/algorithms solutions from striver a2z dsa sheet.
 Arrays/
   Easy/            # Foundational array patterns
   Medium/          # Sliding window, prefix sums, permutations, etc.
+Binary_Search/
+  1dArrays/        # Classic 1D binary search patterns
 Basic Hashing/     # Frequency maps and lookups
 Sortings/          # Classic sorting implementations
 input.txt|output.txt
@@ -64,6 +67,13 @@ input.txt|output.txt
 - [`Arrays/Hard/reversePairs.py`](Arrays/Hard/reversePairs.py)
 - [`Arrays/Hard/maximumProductSubarray.py`](Arrays/Hard/maximumProductSubarray.py)
 
+### Binary Search
+- [`Binary_Search/1dArrays/binarySearch.py`](Binary_Search/1dArrays/binarySearch.py)
+- [`Binary_Search/1dArrays/insertPosition.py`](Binary_Search/1dArrays/insertPosition.py)
+- [`Binary_Search/1dArrays/ceilSArray.py`](Binary_Search/1dArrays/ceilSArray.py)
+- [`Binary_Search/1dArrays/upperBound.py`](Binary_Search/1dArrays/upperBound.py)
+- [`Binary_Search/1dArrays/lowerBound.py`](Binary_Search/1dArrays/lowerBound.py)
+- [`Binary_Search/1dArrays/floorSArray.py`](Binary_Search/1dArrays/floorSArray.py)
 
 ### Basic Hashing
 - [`Basic Hashing/frequency.py`](Basic%20Hashing/frequency.py)
@@ -81,4 +91,3 @@ input.txt|output.txt
 ### Browse & publish tips
 - Open code links directly in VS Code or the GitHub web UI to review implementations.
 - `input.txt` and `output.txt` in the repo root can hold sample IO or quick test cases.
-
