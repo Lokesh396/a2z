@@ -12,7 +12,25 @@ if USE_FILE:
     BASE_DIR = Path(__file__).resolve().parents[2]
     sys.stdin = open(os.path.join(BASE_DIR, "input.txt"), "r")
     sys.stdout = open(os.path.join(BASE_DIR, "output.txt"), "w")
+
 def majorityElement(nums):
+    """
+    
+    Given an array of numbers, return the elements that appeared than floor of n/3 times
+
+    Algorithm:
+    - It works based on the boyer moore's voting algorithm, rather now we take two variables.
+
+    Args:
+        nums: input array
+
+    Returns: return the array with majority elements. at max there will be 2 elements.
+
+    Time Complexity: O(n) linear traversal of the input array
+
+    Space Complexity: O(1) here the ouput array size is constant.
+    """
+    
     minFreq = floor(len(nums) / 3) + 1
     element1, element2 = -float('inf'), -float('inf')
     element1_count, element2_count = 0, 0
