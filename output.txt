@@ -1,1 +1,1 @@
-Element is at: 1
+The array is rotated  1 times
