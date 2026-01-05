@@ -74,6 +74,9 @@ input.txt|output.txt
 - [`Binary_Search/1dArrays/upperBound.py`](Binary_Search/1dArrays/upperBound.py)
 - [`Binary_Search/1dArrays/lowerBound.py`](Binary_Search/1dArrays/lowerBound.py)
 - [`Binary_Search/1dArrays/floorSArray.py`](Binary_Search/1dArrays/floorSArray.py)
+- [`Binary_Search/1dArrays/occurences.py`](Binary_Search/1dArrays/occurences.py)
+- [`Binary_Search/1dArrays/firstandlastoccurence.py`](Binary_Search/1dArrays/firstandlastoccurence.py)
+- [`Binary_Search/1dArrays/searchRotatedSortedI.py`](Binary_Search/1dArrays/searchRotatedSortedI.py)
 
 ### Basic Hashing
 - [`Basic Hashing/frequency.py`](Basic%20Hashing/frequency.py)
