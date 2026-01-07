@@ -17,6 +17,7 @@ Arrays/
   Medium/          # Sliding window, prefix sums, permutations, etc.
 Binary_Search/
   1dArrays/        # Classic 1D binary search patterns
+  Answers/         # Applied binary search problems
 Basic Hashing/     # Frequency maps and lookups
 Sortings/          # Classic sorting implementations
 input.txt|output.txt
@@ -68,15 +69,27 @@ input.txt|output.txt
 - [`Arrays/Hard/maximumProductSubarray.py`](Arrays/Hard/maximumProductSubarray.py)
 
 ### Binary Search
-- [`Binary_Search/1dArrays/binarySearch.py`](Binary_Search/1dArrays/binarySearch.py)
-- [`Binary_Search/1dArrays/insertPosition.py`](Binary_Search/1dArrays/insertPosition.py)
-- [`Binary_Search/1dArrays/ceilSArray.py`](Binary_Search/1dArrays/ceilSArray.py)
-- [`Binary_Search/1dArrays/upperBound.py`](Binary_Search/1dArrays/upperBound.py)
-- [`Binary_Search/1dArrays/lowerBound.py`](Binary_Search/1dArrays/lowerBound.py)
-- [`Binary_Search/1dArrays/floorSArray.py`](Binary_Search/1dArrays/floorSArray.py)
-- [`Binary_Search/1dArrays/occurences.py`](Binary_Search/1dArrays/occurences.py)
-- [`Binary_Search/1dArrays/firstandlastoccurence.py`](Binary_Search/1dArrays/firstandlastoccurence.py)
-- [`Binary_Search/1dArrays/searchRotatedSortedI.py`](Binary_Search/1dArrays/searchRotatedSortedI.py)
+- 1D Arrays
+  - [`Binary_Search/1dArrays/binarySearch.py`](Binary_Search/1dArrays/binarySearch.py)
+  - [`Binary_Search/1dArrays/insertPosition.py`](Binary_Search/1dArrays/insertPosition.py)
+  - [`Binary_Search/1dArrays/ceilSArray.py`](Binary_Search/1dArrays/ceilSArray.py)
+  - [`Binary_Search/1dArrays/upperBound.py`](Binary_Search/1dArrays/upperBound.py)
+  - [`Binary_Search/1dArrays/lowerBound.py`](Binary_Search/1dArrays/lowerBound.py)
+  - [`Binary_Search/1dArrays/floorSArray.py`](Binary_Search/1dArrays/floorSArray.py)
+  - [`Binary_Search/1dArrays/occurences.py`](Binary_Search/1dArrays/occurences.py)
+  - [`Binary_Search/1dArrays/firstandlastoccurence.py`](Binary_Search/1dArrays/firstandlastoccurence.py)
+  - [`Binary_Search/1dArrays/peakElement.py`](Binary_Search/1dArrays/peakElement.py)
+  - [`Binary_Search/1dArrays/rotateIndex.py`](Binary_Search/1dArrays/rotateIndex.py)
+  - [`Binary_Search/1dArrays/minimumSortedArray.py`](Binary_Search/1dArrays/minimumSortedArray.py)
+  - [`Binary_Search/1dArrays/searchRotatedSortedII.py`](Binary_Search/1dArrays/searchRotatedSortedII.py)
+  - [`Binary_Search/1dArrays/singleElement.py`](Binary_Search/1dArrays/singleElement.py)
+  - [`Binary_Search/1dArrays/searchRotatedSortedI.py`](Binary_Search/1dArrays/searchRotatedSortedI.py)
+- Answers
+  - [`Binary_Search/Answers/squareRoot.py`](Binary_Search/Answers/squareRoot.py)
+  - [`Binary_Search/Answers/nRootM.py`](Binary_Search/Answers/nRootM.py)
+  - [`Binary_Search/Answers/kokoEatingBananas.py`](Binary_Search/Answers/kokoEatingBananas.py)
+  - [`Binary_Search/Answers/makeMboquets.py`](Binary_Search/Answers/makeMboquets.py)
+  - [`Binary_Search/Answers/smallestDivisorThreshold.py`](Binary_Search/Answers/smallestDivisorThreshold.py)
 
 ### Basic Hashing
 - [`Basic Hashing/frequency.py`](Basic%20Hashing/frequency.py)
