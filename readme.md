@@ -90,6 +90,8 @@ input.txt|output.txt
   - [`Binary_Search/Answers/kokoEatingBananas.py`](Binary_Search/Answers/kokoEatingBananas.py)
   - [`Binary_Search/Answers/makeMboquets.py`](Binary_Search/Answers/makeMboquets.py)
   - [`Binary_Search/Answers/smallestDivisorThreshold.py`](Binary_Search/Answers/smallestDivisorThreshold.py)
+  - [`Binary_Search/Answers/capacityToShipPackges.py`](Binary_Search/Answers/capacityToShipPackges.py)
+  - [`Binary_Search/Answers/kthmissing.py`](Binary_Search/Answers/kthmissing.py)
 
 ### Basic Hashing
 - [`Basic Hashing/frequency.py`](Basic%20Hashing/frequency.py)
