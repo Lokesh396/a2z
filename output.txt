@@ -1,1 +1,1 @@
-Smallest divisor: 4
+max Pages 10
