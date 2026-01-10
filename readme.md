@@ -91,8 +91,12 @@ input.txt|output.txt
   - [`Binary_Search/Answers/makeMboquets.py`](Binary_Search/Answers/makeMboquets.py)
   - [`Binary_Search/Answers/smallestDivisorThreshold.py`](Binary_Search/Answers/smallestDivisorThreshold.py)
   - [`Binary_Search/Answers/capacityToShipPackges.py`](Binary_Search/Answers/capacityToShipPackges.py)
+  - [`Binary_Search/Answers/gasStations.py`](Binary_Search/Answers/gasStations.py)
+  - [`Binary_Search/Answers/paintersPartition.py`](Binary_Search/Answers/paintersPartition.py)
+  - [`Binary_Search/Answers/splitArray.py`](Binary_Search/Answers/splitArray.py)
   - [`Binary_Search/Answers/kthmissing.py`](Binary_Search/Answers/kthmissing.py)
-
+  - [`Binary_Search/Answers/agressiveCows.py`](Binary_Search/Answers/agressiveCows.py)
+  - [`Binary_Search/Answers/allocateBooks.py`](Binary_Search/Answers/allocateBooks.py)
 ### Basic Hashing
 - [`Basic Hashing/frequency.py`](Basic%20Hashing/frequency.py)
 - [`Basic Hashing/highestLowest.py`](Basic%20Hashing/highestLowest.py)
