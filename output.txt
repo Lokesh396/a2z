@@ -1,1 +1,1 @@
-max Split Array 10
+Median: 3.5
