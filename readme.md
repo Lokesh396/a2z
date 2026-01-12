@@ -95,6 +95,8 @@ input.txt|output.txt
   - [`Binary_Search/Answers/paintersPartition.py`](Binary_Search/Answers/paintersPartition.py)
   - [`Binary_Search/Answers/splitArray.py`](Binary_Search/Answers/splitArray.py)
   - [`Binary_Search/Answers/kthmissing.py`](Binary_Search/Answers/kthmissing.py)
+  - [`Binary_Search/Answers/kthElementSortedArray.py`](Binary_Search/Answers/kthElementSortedArray.py)
+  - [`Binary_Search/Answers/medianSortedArrays.py`](Binary_Search/Answers/medianSortedArrays.py)
   - [`Binary_Search/Answers/agressiveCows.py`](Binary_Search/Answers/agressiveCows.py)
   - [`Binary_Search/Answers/allocateBooks.py`](Binary_Search/Answers/allocateBooks.py)
 ### Basic Hashing
