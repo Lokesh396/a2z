@@ -29,6 +29,22 @@ def threeSumBetter( nums: List[int]) -> List[List[int]]:
     return list(ans)
 
 def threeSumOptimal( nums: List[int]) -> List[List[int]]:
+    """
+    Given an array of nums, return an array ans, which containa an array i, j, k , where i < j < k and 
+    sum of elements at i, j, k gives 0.
+    
+    Algorithm:
+    - We will sort the array, if we keep element and i as fixed, the problems boils down to two sum 2,
+    we can simply use two pointer to determine the answer.
+    - we can ignore the duplicates by simple checking are we starting with the same element as previous
+    or not.
+
+    Returns: An array which contains an array of indexes, whose sum upto 0.
+
+    Time Complexity: O(n^2)
+    
+    Space Complexity: O(n)
+    """
     nums.sort()
     n =  len(nums)
     ans = []

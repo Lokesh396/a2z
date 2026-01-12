@@ -14,6 +14,18 @@ if USE_FILE:
     sys.stdin = open(os.path.join(BASE_DIR, "input.txt"), "r")
     sys.stdout = open(os.path.join(BASE_DIR, "output.txt"), "w")
 def fourSum( nums: List[int], target: int) -> List[List[int]]:
+    """
+    Return all the quadraplets that sums upto 0, such that indexes i, j, k and l are not same.
+
+    Algorithm:
+    - The problem is similar to three sum, we need to another loop at top to accumulate the fourth number.
+
+    Returns: reutrn an array contains all the quadraplets that sums up to 0.
+
+    Time Complexity: O(n^3)
+    
+    Space Complexity: O(n)
+    """
     n = len(nums)
 
     nums.sort()

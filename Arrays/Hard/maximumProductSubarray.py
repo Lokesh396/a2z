@@ -15,6 +15,22 @@ if USE_FILE:
 
 
 def maxProduct(arr):
+    """
+    Returns the maximum product over all contiguous subarrays.
+
+    Tracks prefix and suffix products in one pass to handle negative numbers and
+    zeros: when a running product hits zero it resets to 1, and we take the best
+    among forward and backward products.
+
+    Args:
+        arr: List of integers.
+
+    Returns:
+        Maximum product value across any contiguous subarray.
+
+    Time Complexity: O(n)
+    Space Complexity: O(1)
+    """
     prefix = 1
     suffix = 1
     maxi, n = -float('inf'), len(arr)

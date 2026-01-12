@@ -42,6 +42,25 @@ def merge(arr, p, q, r):
     
     arr[p:r+1] = tarr[::]
 def merge_sort(arr, p, r):
+    """
+    Counts inversions in `arr` using merge sort partitioning.
+
+    An inversion is a pair (i, j) where i < j and arr[i] > arr[j]. We split the
+    array, recursively count inversions in each half, then count cross-half
+    inversions during merge when a right element is placed before remaining
+    left elements.
+
+    Args:
+        arr: List of integers.
+        p: Start index (inclusive).
+        r: End index (inclusive).
+
+    Returns:
+        None; updates the global `count` list in-place with total inversions.
+
+    Time Complexity: O(n log n)
+    Space Complexity: O(n) for the temporary array in merge.
+    """
     if p < r:
         q = (p+r) // 2
         merge_sort(arr, p, q)

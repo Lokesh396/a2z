@@ -14,6 +14,23 @@ if USE_FILE:
     sys.stdout = open(os.path.join(BASE_DIR, "output.txt"), "w")
 
 def subarrays(nums, k):
+    """
+    Given an array return count of subarray  whose xor is k
+
+    Algorithm:
+    - we will store the xor of all the elements and store them in hashmap.
+    - It is similar to the problem subarrays with sum k.
+
+    Args:
+    nums: input array
+    k: xor value
+
+    Returns: return the count of subarrays with xor as k.
+
+    Time Complexity: O(n)
+
+    Space Complexity: O(n)
+    """
 
     prexor = 0
     prexormap = {0:1}

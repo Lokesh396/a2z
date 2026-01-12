@@ -50,6 +50,24 @@ def merge(arr, p, q, r):
     arr[p:r+1] = tarr[::]
     return count
 def merge_sort(arr, p, r):
+    """
+    Counts reverse pairs (i < j and arr[i] > 2*arr[j]) using merge sort.
+
+    The array is split recursively; before merging halves, we count how many
+    right elements are less than half of each left element, then proceed with a
+    standard merge to keep halves sorted for future counts.
+
+    Args:
+        arr: List of integers.
+        p: Start index (inclusive).
+        r: End index (inclusive).
+
+    Returns:
+        Number of reverse pairs in arr[p:r+1].
+
+    Time Complexity: O(n log n)
+    Space Complexity: O(n) for the temporary merge buffer.
+    """
     count = 0
     if p < r:
         q = (p+r) // 2

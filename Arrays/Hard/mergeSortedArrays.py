@@ -16,6 +16,25 @@ if USE_FILE:
 
 
 def optimalv1(arr1, arr2):
+    """
+    Given two sorted arrays merge them with out using any extra space.
+
+    Algorithm:
+    - from the array1 we start from last and from the array2 we start from first and swap until 
+    elements in the left array is greater than the array2.
+    - finally we sort them and return.
+
+    Args:
+        arr1: sorted array 1
+        arr2: sorted array 2
+
+    Returns: modifies the arrays in place such that elements in the left array is smaller than or
+    equal to the elements in the right.
+
+    Time Complexity: O(min(m,n)) + o(mlgm) + o(nlgn)
+
+    Space Complexity: O(1)
+    """
     left = len(arr1) - 1
     right = 0
     while left >= 0 and right < len(arr2):
@@ -35,6 +54,28 @@ def swap(arr1, arr2, left, right):
         arr1[left], arr2[right] = arr2[right], arr1[left]
 
 def optimalv2(arr1, arr2):
+
+    """
+    we use the gap method to sort the arrays.
+
+    Algorithm:
+    - we will take a gap of length /2 at first and compare the elements and swap.
+    - we will have three scenarios here:
+        - both elements in left array
+        - both elements in right array
+        - one is left and one in right
+    - gap becomes gap / 2 + (gap & 1)
+    - we repeat these until becomes gap becomes 1.
+    Args:
+        arr1: input sorted array1
+        arr2: input sorted array2
+
+    Returns: modifies the arrays inplace
+
+    Time Complexity: O(m+n)lg(m+n)
+
+    Space Complexity: O(1)
+    """
 
     m = len(arr1)
     n = len(arr2)

@@ -16,6 +16,22 @@ if USE_FILE:
 
 
 def merge(intervals: List[List[int]]) -> List[List[int]]:
+    """
+    Given an array of intervals, merge intervals which overlaps.
+
+    Algorithm:
+    - Sort the intervals, check whether the current intervals start is before or equal to the last
+      interval end, if true take the maximum as end of both intervals. if no overlap add them to result.
+    
+    Args:
+        intervals: Interval array
+    
+    Returns: returns the resultant intervals after merging.
+
+    Time Complexity: O(n) + O(nlgn)
+
+    Space Complexity: O(n)
+    """
     intervals.sort()
 
     out = [intervals[0]]

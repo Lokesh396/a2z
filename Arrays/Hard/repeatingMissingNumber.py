@@ -15,23 +15,38 @@ if USE_FILE:
 
 
 def missingAndRepeating(arr, n):
-   
-   sqsum = 0
-   nsum = 0 
-   for num in arr:
-       sqsum += (num**2)
-       nsum += num
-   
-   fnsum = (n*(n+1)) // 2
-   fnssqum = (n*(n+1)*(2*n+1)) // 6
-   xmy = nsum - fnsum
-   x2my2 = sqsum - fnssqum
-   xpy = x2my2 // xmy
-   tx = xmy+xpy
-   x = tx // 2
-   y = xpy - x
+    """
+    Given array of numbers, a number is repeated twice and one number is missing.
 
-   return y, x
+    Algorithm:
+    - the algorithm was purely based on math. x - y, x^2 - y^2
+
+    Args:
+        arr: input array
+        n: length of the array
+
+    Returns: returns the element which is missing and repeating.
+
+    Time Complexity: O(n)
+    
+    Space Complexity: O(1)
+    """
+    sqsum = 0
+    nsum = 0 
+    for num in arr:
+        sqsum += (num**2)
+        nsum += num
+    
+    fnsum = (n*(n+1)) // 2
+    fnssqum = (n*(n+1)*(2*n+1)) // 6
+    xmy = nsum - fnsum
+    x2my2 = sqsum - fnssqum
+    xpy = x2my2 // xmy
+    tx = xmy+xpy
+    x = tx // 2
+    y = xpy - x
+
+    return y, x
 
 def missingAndRepatingXor(arr, n):
 
