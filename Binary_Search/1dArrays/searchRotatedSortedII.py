@@ -14,7 +14,25 @@ if USE_FILE:
     sys.stdout = open(os.path.join(BASE_DIR, "output.txt"), "w")
 
 def search(arr: List[int], target: int) -> bool:
-        
+    """
+    Given an array which sorted and it is rotated by some places, we need to return whehter a given 
+    target is present or not in the array the array may contains duplicates.
+
+    Algorithm:
+    - we will a normal binary search, but in order to eliminate the search, we will check which 
+    half is sorted, based on that we will decide the search space that need to be elimiated.
+    - we will just check all the low, mid and high are same and adjust the indexes.
+
+    Args:
+        nums: rotated sorted array
+        target: target element.
+
+    returns: returns index if elements present else -1
+    
+    Time Complexity: O(lgn)
+
+    Space Complexity: O(1)
+    """
     low, high = 0, len(arr)-1
     ans = 0
     while low <= high:
