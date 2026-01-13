@@ -84,6 +84,12 @@ input.txt|output.txt
   - [`Binary_Search/1dArrays/searchRotatedSortedII.py`](Binary_Search/1dArrays/searchRotatedSortedII.py)
   - [`Binary_Search/1dArrays/singleElement.py`](Binary_Search/1dArrays/singleElement.py)
   - [`Binary_Search/1dArrays/searchRotatedSortedI.py`](Binary_Search/1dArrays/searchRotatedSortedI.py)
+- 2D Arrays
+  - [`Binary_Search/2dArrays/search2DMatrix.py`](Binary_Search/2dArrays/search2DMatrix.py)
+  - [`Binary_Search/2dArrays/search2DMatrixII.py`](Binary_Search/2dArrays/search2DMatrixII.py)
+  - [`Binary_Search/2dArrays/rowMaxOnes.py`](Binary_Search/2dArrays/rowMaxOnes.py)
+  - [`Binary_Search/2dArrays/matrixMedian.py`](Binary_Search/2dArrays/matrixMedian.py)
+  - [`Binary_Search/2dArrays/peakElementII.py`](Binary_Search/2dArrays/peakElementII.py)
 - Answers
   - [`Binary_Search/Answers/squareRoot.py`](Binary_Search/Answers/squareRoot.py)
   - [`Binary_Search/Answers/nRootM.py`](Binary_Search/Answers/nRootM.py)
