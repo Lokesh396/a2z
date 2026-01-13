@@ -1,1 +1,1 @@
-Median: 7
+Rotate String: False

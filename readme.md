@@ -6,9 +6,12 @@ Curated data-structures/algorithms solutions from striver a2z dsa sheet.
 - [Repository layout](#repository-layout)
 - [Arrays — Easy](#arrays--easy)
 - [Arrays — Medium](#arrays--medium)
+- [Arrays — Hard](#array---hard)
 - [Binary Search](#binary-search)
 - [Basic Hashing](#basic-hashing)
 - [Sortings](#sortings)
+- [Strings — Easy](#strings--easy)
+- [Strings — Medium](#strings--medium)
 
 ### Repository layout
 ```
@@ -20,6 +23,7 @@ Binary_Search/
   Answers/         # Applied binary search problems
 Basic Hashing/     # Frequency maps and lookups
 Sortings/          # Classic sorting implementations
+Strings/           # String manipulation and parsing
 input.txt|output.txt
 ```
 
@@ -115,8 +119,22 @@ input.txt|output.txt
   - [`Sortings/Sorting-1/insertionSort.py`](Sortings/Sorting-1/insertionSort.py)
   - [`Sortings/Sorting-1/selectionSort.py`](Sortings/Sorting-1/selectionSort.py)
 - Sorting 2
-  - [`Sortings/Sorting-2/mergeSort.py`](Sortings/Sorting-2/mergeSort.py)
-  - [`Sortings/Sorting-2/quickSort.py`](Sortings/Sorting-2/quickSort.py)
+- [`Sortings/Sorting-2/mergeSort.py`](Sortings/Sorting-2/mergeSort.py)
+- [`Sortings/Sorting-2/quickSort.py`](Sortings/Sorting-2/quickSort.py)
+
+### Strings — Easy
+- [`Strings/Easy/anagram.py`](Strings/Easy/anagram.py)
+- [`Strings/Easy/isomorphicString.py`](Strings/Easy/isomorphicString.py)
+- [`Strings/Easy/largestOddNumber.py`](Strings/Easy/largestOddNumber.py)
+- [`Strings/Easy/longestCommonPrefix.py`](Strings/Easy/longestCommonPrefix.py)
+- [`Strings/Easy/reverseWords.py`](Strings/Easy/reverseWords.py)
+- [`Strings/Easy/stringRotation.py`](Strings/Easy/stringRotation.py)
+
+### Strings — Medium
+- [`Strings/Medium/atoi.py`](Strings/Medium/atoi.py)
+- [`Strings/Medium/maximumNestDepth.py`](Strings/Medium/maximumNestDepth.py)
+- [`Strings/Medium/romanToInteger.py`](Strings/Medium/romanToInteger.py)
+- [`Strings/Medium/sortByFrequency.py`](Strings/Medium/sortByFrequency.py)
 
 ### Browse & publish tips
 - Open code links directly in VS Code or the GitHub web UI to review implementations.
