@@ -127,11 +127,11 @@ input.txt|output.txt
 - [`Strings/Easy/isomorphicString.py`](Strings/Easy/isomorphicString.py)
 - [`Strings/Easy/largestOddNumber.py`](Strings/Easy/largestOddNumber.py)
 - [`Strings/Easy/longestCommonPrefix.py`](Strings/Easy/longestCommonPrefix.py)
-- [`Strings/Easy/reverseWords.py`](Strings/Easy/reverseWords.py)
 - [`Strings/Easy/stringRotation.py`](Strings/Easy/stringRotation.py)
 
 ### Strings — Medium
 - [`Strings/Medium/atoi.py`](Strings/Medium/atoi.py)
+- [`Strings/Easy/reverseWords.py`](Strings/Easy/reverseWords.py)
 - [`Strings/Medium/maximumNestDepth.py`](Strings/Medium/maximumNestDepth.py)
 - [`Strings/Medium/romanToInteger.py`](Strings/Medium/romanToInteger.py)
 - [`Strings/Medium/sortByFrequency.py`](Strings/Medium/sortByFrequency.py)
