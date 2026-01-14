@@ -8,6 +8,7 @@ Curated data-structures/algorithms solutions from striver a2z dsa sheet.
 - [Arrays — Medium](#arrays--medium)
 - [Arrays — Hard](#array---hard)
 - [Binary Search](#binary-search)
+- [Linked Lists](#linked-lists)
 - [Basic Hashing](#basic-hashing)
 - [Sortings](#sortings)
 - [Strings — Easy](#strings--easy)
@@ -21,6 +22,9 @@ Arrays/
 Binary_Search/
   1dArrays/        # Classic 1D binary search patterns
   Answers/         # Applied binary search problems
+LinkedLists/
+  1D/              # Singly linked list basics
+  2D/              # Doubly linked list basics
 Basic Hashing/     # Frequency maps and lookups
 Sortings/          # Classic sorting implementations
 Strings/           # String manipulation and parsing
@@ -109,6 +113,12 @@ input.txt|output.txt
   - [`Binary_Search/Answers/medianSortedArrays.py`](Binary_Search/Answers/medianSortedArrays.py)
   - [`Binary_Search/Answers/agressiveCows.py`](Binary_Search/Answers/agressiveCows.py)
   - [`Binary_Search/Answers/allocateBooks.py`](Binary_Search/Answers/allocateBooks.py)
+### Linked Lists
+- 1D
+  - [`LinkedLists/1D/deleteNode.py`](LinkedLists/1D/deleteNode.py)
+  - [`LinkedLists/1D/linkedList.py`](LinkedLists/1D/linkedList.py)
+- 2D
+  - [`LinkedLists/2D/doublyLinkedList.py`](LinkedLists/2D/doublyLinkedList.py)
 ### Basic Hashing
 - [`Basic Hashing/frequency.py`](Basic%20Hashing/frequency.py)
 - [`Basic Hashing/highestLowest.py`](Basic%20Hashing/highestLowest.py)
@@ -119,8 +129,8 @@ input.txt|output.txt
   - [`Sortings/Sorting-1/insertionSort.py`](Sortings/Sorting-1/insertionSort.py)
   - [`Sortings/Sorting-1/selectionSort.py`](Sortings/Sorting-1/selectionSort.py)
 - Sorting 2
-- [`Sortings/Sorting-2/mergeSort.py`](Sortings/Sorting-2/mergeSort.py)
-- [`Sortings/Sorting-2/quickSort.py`](Sortings/Sorting-2/quickSort.py)
+  - [`Sortings/Sorting-2/mergeSort.py`](Sortings/Sorting-2/mergeSort.py)
+  - [`Sortings/Sorting-2/quickSort.py`](Sortings/Sorting-2/quickSort.py)
 
 ### Strings — Easy
 - [`Strings/Easy/anagram.py`](Strings/Easy/anagram.py)
@@ -131,8 +141,10 @@ input.txt|output.txt
 
 ### Strings — Medium
 - [`Strings/Medium/atoi.py`](Strings/Medium/atoi.py)
-- [`Strings/Easy/reverseWords.py`](Strings/Easy/reverseWords.py)
+- [`Strings/Medium/beautySum.py`](Strings/Medium/beautySum.py)
+- [`Strings/Medium/countSubstringsWithk.py`](Strings/Medium/countSubstringsWithk.py)
 - [`Strings/Medium/maximumNestDepth.py`](Strings/Medium/maximumNestDepth.py)
+- [`Strings/Medium/reverseWords.py`](Strings/Medium/reverseWords.py)
 - [`Strings/Medium/romanToInteger.py`](Strings/Medium/romanToInteger.py)
 - [`Strings/Medium/sortByFrequency.py`](Strings/Medium/sortByFrequency.py)
 
