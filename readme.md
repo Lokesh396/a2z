@@ -6,7 +6,7 @@ Curated data-structures/algorithms solutions from striver a2z dsa sheet.
 - [Repository layout](#repository-layout)
 - [Arrays — Easy](#arrays--easy)
 - [Arrays — Medium](#arrays--medium)
-- [Arrays — Hard](#array---hard)
+- [Arrays — Hard](#arrays--hard)
 - [Binary Search](#binary-search)
 - [Linked Lists](#linked-lists)
 - [Basic Hashing](#basic-hashing)
@@ -62,9 +62,9 @@ input.txt|output.txt
 - [`Arrays/Medium/spiralMatrix.py`](Arrays/Medium/spiralMatrix.py)
 - [`Arrays/Medium/SubArraysWithSum.py`](Arrays/Medium/subArraysWithSum.py)
 
-### Array - Hard
-- [`Arrays/Hard/threesum.py`](Arrays/Hard/threesum.py)
-- [`Arrays/Hard/foursum.py`](Arrays/Hard/foursum.py)
+### Arrays — Hard
+- [`Arrays/Hard/threeSum.py`](Arrays/Hard/threeSum.py)
+- [`Arrays/Hard/fourSum.py`](Arrays/Hard/fourSum.py)
 - [`Arrays/Hard/majorityElement2.py`](Arrays/Hard/majorityElement2.py)
 - [`Arrays/Hard/PascalsTriangle.py`](Arrays/Hard/PascalsTriangle.py)
 - [`Arrays/Hard/LargestSubarrayWirhZerosum.py`](Arrays/Hard/LargestSubarrayWirhZerosum.py)
@@ -118,14 +118,21 @@ input.txt|output.txt
   - [`LinkedLists/1D/deleteNode.py`](LinkedLists/1D/deleteNode.py)
   - [`LinkedLists/1D/linkedList.py`](LinkedLists/1D/linkedList.py)
 - Medium 1D
+  - [`LinkedLists/Medium1DLinkedLists/add1toLL.py`](LinkedLists/Medium1DLinkedLists/add1toLL.py)
+  - [`LinkedLists/Medium1DLinkedLists/add2numbers.py`](LinkedLists/Medium1DLinkedLists/add2numbers.py)
+  - [`LinkedLists/Medium1DLinkedLists/intersectionYLL.py`](LinkedLists/Medium1DLinkedLists/intersectionYLL.py)
   - [`LinkedLists/Medium1DLinkedLists/loopLL.py`](LinkedLists/Medium1DLinkedLists/loopLL.py)
   - [`LinkedLists/Medium1DLinkedLists/loopLength.py`](LinkedLists/Medium1DLinkedLists/loopLength.py)
   - [`LinkedLists/Medium1DLinkedLists/loopStartingPoint.py`](LinkedLists/Medium1DLinkedLists/loopStartingPoint.py)
   - [`LinkedLists/Medium1DLinkedLists/middleLL.py`](LinkedLists/Medium1DLinkedLists/middleLL.py)
   - [`LinkedLists/Medium1DLinkedLists/oddEvenPointer.py`](LinkedLists/Medium1DLinkedLists/oddEvenPointer.py)
   - [`LinkedLists/Medium1DLinkedLists/palindromeLL.py`](LinkedLists/Medium1DLinkedLists/palindromeLL.py)
+  - [`LinkedLists/Medium1DLinkedLists/removeMiddle.py`](LinkedLists/Medium1DLinkedLists/removeMiddle.py)
+  - [`LinkedLists/Medium1DLinkedLists/removeNNode.py`](LinkedLists/Medium1DLinkedLists/removeNNode.py)
   - [`LinkedLists/Medium1DLinkedLists/reverseLLIterative.py`](LinkedLists/Medium1DLinkedLists/reverseLLIterative.py)
   - [`LinkedLists/Medium1DLinkedLists/reverseLLrecursive.py`](LinkedLists/Medium1DLinkedLists/reverseLLrecursive.py)
+  - [`LinkedLists/Medium1DLinkedLists/sort0s1s2s.py`](LinkedLists/Medium1DLinkedLists/sort0s1s2s.py)
+  - [`LinkedLists/Medium1DLinkedLists/sortLL.py`](LinkedLists/Medium1DLinkedLists/sortLL.py)
 - 2D
   - [`LinkedLists/2D/doublyLinkedList.py`](LinkedLists/2D/doublyLinkedList.py)
 ### Basic Hashing
