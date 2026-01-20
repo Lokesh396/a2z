@@ -138,6 +138,9 @@ input.txt|output.txt
   - [`LinkedLists/Medium2DLinkedLists/removeDuplicates.py`](LinkedLists/Medium2DLinkedLists/removeDuplicates.py)
   - [`LinkedLists/Medium2DLinkedLists/removeDuplicatesinSorted.py`](LinkedLists/Medium2DLinkedLists/removeDuplicatesinSorted.py)
   - [`LinkedLists/Medium2DLinkedLists/reverseNodesKGroups.py`](LinkedLists/Medium2DLinkedLists/reverseNodesKGroups.py)
+- Hard
+  - [`LinkedLists/Hard/RotateLL.py`](LinkedLists/Hard/RotateLL.py)
+  - [`LinkedLists/Hard/reverseNodesKGroups.py`](LinkedLists/Hard/reverseNodesKGroups.py)
 - 2D
   - [`LinkedLists/2D/doublyLinkedList.py`](LinkedLists/2D/doublyLinkedList.py)
 ### Basic Hashing
