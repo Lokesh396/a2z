@@ -133,6 +133,11 @@ input.txt|output.txt
   - [`LinkedLists/Medium1DLinkedLists/reverseLLrecursive.py`](LinkedLists/Medium1DLinkedLists/reverseLLrecursive.py)
   - [`LinkedLists/Medium1DLinkedLists/sort0s1s2s.py`](LinkedLists/Medium1DLinkedLists/sort0s1s2s.py)
   - [`LinkedLists/Medium1DLinkedLists/sortLL.py`](LinkedLists/Medium1DLinkedLists/sortLL.py)
+- Medium 2D
+  - [`LinkedLists/Medium2DLinkedLists/findPairs.py`](LinkedLists/Medium2DLinkedLists/findPairs.py)
+  - [`LinkedLists/Medium2DLinkedLists/removeDuplicates.py`](LinkedLists/Medium2DLinkedLists/removeDuplicates.py)
+  - [`LinkedLists/Medium2DLinkedLists/removeDuplicatesinSorted.py`](LinkedLists/Medium2DLinkedLists/removeDuplicatesinSorted.py)
+  - [`LinkedLists/Medium2DLinkedLists/reverseNodesKGroups.py`](LinkedLists/Medium2DLinkedLists/reverseNodesKGroups.py)
 - 2D
   - [`LinkedLists/2D/doublyLinkedList.py`](LinkedLists/2D/doublyLinkedList.py)
 ### Basic Hashing
