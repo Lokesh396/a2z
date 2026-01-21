@@ -13,22 +13,37 @@ if USE_FILE:
     sys.stdin = open(os.path.join(BASE_DIR, "input.txt"), "r")
     sys.stdout = open(os.path.join(BASE_DIR, "output.txt"), "w")
 
-def minimum(arr):
-    low, high = 0, len(arr)-1
-    ans = float('inf')
+def minimum(nums):
+    """
+    Given an rotated sorted array we need to return the minimum in the array.
+
+    Algorithm:
+    - if the array is rotated and sorted, if we divide the array in two parts before and 
+    after mid definitely one part of the array is sorted, so based on that we can check
+    in which direction we need to move.
+
+    Args:
+        nums: input array
+
+    Returns: returns the minimum element in the array.
+
+    Time Complexity: O(lgn)
+
+    Space Complexity: O(1)
+    """
+    low, high, ans = 0, len(nums)-1, float('inf')
+
     while low <= high:
 
         mid = (low + high) // 2
-        if arr[low] == arr[mid] == arr[high]:
-            low += 1
-            high -= 1
-            continue
-        if arr[mid] <= arr[high]:
-            ans = min(arr[mid], ans)
+
+        if nums[mid] <= nums[high]:
+            ans = min(nums[mid], ans)
             high = mid - 1
         else:
-            ans = min(arr[low], ans)
+            ans = min(nums[low], ans)
             low = mid + 1
+    
     return ans
 def main():
     # -------------------------

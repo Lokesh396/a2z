@@ -13,7 +13,23 @@ if USE_FILE:
     BASE_DIR = Path(__file__).resolve().parents[2]
     sys.stdin = open(os.path.join(BASE_DIR, "input.txt"), "r")
     sys.stdout = open(os.path.join(BASE_DIR, "output.txt"), "w")
+
 def first(arr, n,k):
+    """
+    Given an array of size n, return the first occurence of the target k
+
+    Algorithm:
+    - we will do normal binary search, if a element is found we need to go left to find the first
+    occurence.
+
+    Args:
+        arr: input array
+        n: length of the array
+        k: target
+    
+    returns: returns the first occurence of the element if exists else -1
+
+    """
     low = 0
     high = n -1
     ans = -1
@@ -30,6 +46,24 @@ def first(arr, n,k):
     return ans
 
 def last(arr, n,k):
+    """
+    Given an array of size n, return the last occurence of the target k
+
+    Algorithm:
+    - we will do normal binary search, if a element is found we need to go right to find the last
+    occurence.
+
+    Args:
+        arr: input array
+        n: length of the array
+        k: target
+    
+    Returns: returns the last occurence of the element if exists else -1
+
+    Time Complexity: O(lgn)
+
+    Space Complexity: O(1)
+    """
     low = 0
     high = n -1
     ans = -1

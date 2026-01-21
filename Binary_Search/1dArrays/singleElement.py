@@ -15,6 +15,25 @@ if USE_FILE:
     sys.stdout = open(os.path.join(BASE_DIR, "output.txt"), "w")
 
 def singleNonDuplicate(nums: List[int]) -> int:
+    """
+
+    Given an array of nums where every element repeat twice except one,
+    return the element which dont repeat twice.
+
+    Algorithm:
+    - if we are at a even index, we need to check whether the next element is same or not, if all
+    the elements prior is pairs that means our single element is to the right else to the left.
+
+    Args:
+        nums: input array
+    
+    Returns: returns the element that appears only once.
+
+    Time Complexity: O(lgn)
+
+    Space Complexity: O(1)
+
+    """
     n = len(nums)
 
     if n == 1:

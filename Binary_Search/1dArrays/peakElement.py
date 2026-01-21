@@ -14,10 +14,33 @@ if USE_FILE:
     sys.stdout = open(os.path.join(BASE_DIR, "output.txt"), "w")
 
 def findPeakElement( nums: List[int]) -> int:
+    """
+    
+    Given array nums, we need to find a peak element, peak element is an element
+    where it is greater than both left and right neighbour. For the first and last
+    element check only the valid neighbour.
+
+    Algorithm:
+    - we will start by looking at the middle, if that is the peak element we return it
+    - we got two scenarios, if the array is rotated and sorted it will change at a 
+    single point.
+    - we will check whether the previous element is smaller to the current mid, if it is
+    then we are in an increasing curve there is a high chance of having peak on the right.
+    - we go the left and check.
+
+    Args:
+        nums: input array
+
+    Returns: returns peak (peak definitely exists according to the problem statetment)
+
+    Time Complexity: O(lgn)
+
+    Space Complexity: O(1)
+    """
     n = len(nums)
     if n == 1:
         return 0
-    if nums[0] > nums[1]:
+    if nums[0] > nums[1]: # as index 0 has no previous element we are simplyfying the logic
         return 0
     if nums[n-1] > nums[n-2]:
         return n-1
