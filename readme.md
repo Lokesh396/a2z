@@ -139,6 +139,8 @@ input.txt|output.txt
   - [`LinkedLists/Medium2DLinkedLists/removeDuplicatesinSorted.py`](LinkedLists/Medium2DLinkedLists/removeDuplicatesinSorted.py)
   - [`LinkedLists/Medium2DLinkedLists/reverseNodesKGroups.py`](LinkedLists/Medium2DLinkedLists/reverseNodesKGroups.py)
 - Hard
+  - [`LinkedLists/Hard/cloneLinkedList.py`](LinkedLists/Hard/cloneLinkedList.py)
+  - [`LinkedLists/Hard/flattenaLL.py`](LinkedLists/Hard/flattenaLL.py)
   - [`LinkedLists/Hard/RotateLL.py`](LinkedLists/Hard/RotateLL.py)
   - [`LinkedLists/Hard/reverseNodesKGroups.py`](LinkedLists/Hard/reverseNodesKGroups.py)
 - 2D
