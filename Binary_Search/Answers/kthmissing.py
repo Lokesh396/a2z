@@ -21,7 +21,6 @@ def findKthPositive(arr: List[int], k: int) -> int:
     while low <= high:
 
         mid = (low+high) // 2
-        
         missing = arr[mid] - (mid+1)
 
         if missing <= k:

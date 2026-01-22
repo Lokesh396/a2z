@@ -13,6 +13,23 @@ if USE_FILE:
     sys.stdin = open(os.path.join(BASE_DIR, "input.txt"), "r")
     sys.stdout = open(os.path.join(BASE_DIR, "output.txt"), "w")
 def isPossible(stalls,d,cows):
+    """
+    given stalls, distance and no of cows, return whether it is possible to place cows in the stalls.
+
+    Algorithm:
+    - we will count the no of cows we can place with the given distance.
+
+    Args:
+        stalls: stalls positions
+        d: minimum distance
+        cows: no of cows
+    
+    Returns: return whether the cows can be placed or not
+
+    Time Complexity: O(n)
+
+    Space Complexity: O(1)
+    """
     cpc = 1
     last = stalls[0]
     for i in range(1, len(stalls)):
@@ -25,6 +42,29 @@ def isPossible(stalls,d,cows):
     return False
 
 def aggressiveCows(stalls, k):
+    """
+    Given array of stalls and no of cows we need to place the cows in the stalls in such a way
+    that the minimum distance between the cows is maximized.
+
+    Algorithm:
+    - we need to sort the array and the search space is 1, to distance of max and min element.
+    - we will element the search space based on the outcome, if that is possible we need to maximize
+    so we will move to the right else to the left.
+
+    Args:
+        stalls: array of stalls
+        k: no of cows
+    
+    Returns: return the minimum distance possible between cows that is maximized.
+
+    Time Complexity: O(n lgmax(n))
+
+    Space Complexity: O(1)
+
+    Pattern: Binary search on answers
+
+    Subpattern: possible with min(max)
+    """
     # Write your code here.
     stalls.sort()
     low = 1
