@@ -14,6 +14,28 @@ if USE_FILE:
     sys.stdout = open(os.path.join(BASE_DIR, "output.txt"), "w")
 
 def mySqrt(x: int) -> int:
+    """
+    
+    Given an number x, return the square root of the number.
+
+    Algorithm:
+    - we are sure the sqrt will definitely will be in the range(1,x) that is our search space
+    - at mid we will check whether the mid * mid gives us the answer and update the search
+    space.
+
+    Args:
+        x: input value x
+    
+    Returns: returns the square root of the number x
+
+    Time Complexity: O(lgx)
+
+    Space Complexity: O(1)
+
+    Pattern: Binary Search
+
+    Subpattern: Binary Search on answers
+    """
     if x == 0:
         return 0
     low = 1

@@ -16,6 +16,25 @@ if USE_FILE:
     sys.stdout = open(os.path.join(BASE_DIR, "output.txt"), "w")
 
 def min_time( piles, mid):
+    """
+    Given piles and the speed, need to return the time taken for completing
+    all bananas.
+
+    Algorithm:
+    - given the speed we will calculate how many hours does it take for each pile and
+    sum it up.
+    
+    Args:
+        piles: piles of bananas
+        mid: eating speed
+    
+    Returns: returns the minimum taken to complete eating all bananas.
+
+    Time Complexity: O(n) # n is the size of the piles
+
+    Space Complexity: O(1)
+
+    """
 
     totalTime = 0
     for pile in piles:
@@ -23,6 +42,31 @@ def min_time( piles, mid):
     return totalTime
 
 def minEatingSpeed( piles: List[int], h: int) -> int:
+    """
+    Given the piles and no of hours guards wont be there, we need to return the eating speed
+    for one hour.
+
+    Algorithm:
+    - The search space is minimum koko can eat 1 banana and maximum the max(piles).
+    - we will calculate mid and check if it is possible to eat all the bananas, in order to find
+    the minimum we will decrease search space accordingly.
+    - at first low is at not possible high is at possible, due to opoosite polarity low will be at
+    the first posisble answer.
+
+    Args:
+        piles: piles of bananas
+        h: hours
+    
+    Returns: returns the eating speed for koko
+
+    Time Complexity: O(lg max(piles) * n)
+
+    Space Complexity: O(1)
+
+    Pattern: Binary Search
+
+    Subpattern: Binary Search on answers (possible or not possible)
+    """
     high = max(piles)
     low = 1
 
