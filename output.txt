@@ -1,1 +1,4 @@
-['ad', 'ae', 'af', 'bd', 'be', 'bf', 'cd', 'ce', 'cf']
+payment is processing through phonepe
+Initializing razor pay
+payment is processing through razorpay
+transcation succesfull

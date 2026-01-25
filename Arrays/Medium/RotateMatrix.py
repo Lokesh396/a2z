@@ -29,7 +29,6 @@ def rotate(matrix):
     Space Complexity; O(1) no extra space is required.
     """
     m = len(matrix)
-    n = len(matrix[0])
 
     for i in range(m):
         for j in range(i):
