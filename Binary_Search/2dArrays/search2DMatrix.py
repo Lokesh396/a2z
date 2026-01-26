@@ -14,7 +14,23 @@ if USE_FILE:
     sys.stdout = open(os.path.join(BASE_DIR, "output.txt"), "w")
 
 def searchMatrix( matrix: List[List[int]], target: int) -> bool:
+    """
+    Given a matrix and a target return true if target exists, the matrix is sorted.
 
+    Algorithm:
+    - we will go through each row and check whether will the target in the range of the row.
+    - we will do binary search on that row.
+
+    Args:
+        matrix: the input matrix
+        target: target that needs to find
+    
+    Retruns: returns true if elements presents else False
+
+    Time Complexity: O(lg(m) + n)
+
+    Space Complexity: O(1)
+    """
     n = len(matrix)
 
     for i in range(n):
@@ -36,6 +52,22 @@ def searchMatrix( matrix: List[List[int]], target: int) -> bool:
     return False
 
 def searchMatrixOptimized(matrix: List[List[int]], target: int) -> bool:
+    """
+    Given a matrix and a target return true if target exists, the matrix is sorted.
+
+    Algorithm:
+    - Given the array is sorted we can consider it as a 1d array and do a straight binary search.
+
+    Args:
+        matrix: the input matrix
+        target: target that needs to find
+    
+    Retruns: returns true if elements presents else False
+
+    Time Complexity: O(lg(m*n))
+
+    Space Complexity: O(1)
+    """
     n = len(matrix)
     m = len(matrix[0])
     low = 0

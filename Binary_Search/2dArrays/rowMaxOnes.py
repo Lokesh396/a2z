@@ -13,6 +13,26 @@ if USE_FILE:
     sys.stdin = open(os.path.join(BASE_DIR, "input.txt"), "r")
     sys.stdout = open(os.path.join(BASE_DIR, "output.txt"), "w")
 def lower_bound( nums, n, t):
+    """
+    You are given an array 'arr' sorted in non-decreasing order and a number 'x'. 
+    You must return the index of the lower bound of 'x'.
+
+    Algorithm:
+    - Do a straight forward binary search here we have only two cases
+        - greater than or equal to 
+        - else less than
+
+    Args:
+        arr: sorted input array
+        n: length of the array
+        x: target element
+    
+    Returns: returns the index of the lower bound of x.
+
+    Time Complexity: O(lgn)
+
+    Space Complexity: O(1)
+    """
     low = 0
     high = n-1
     while low <= high:
@@ -24,8 +44,13 @@ def lower_bound( nums, n, t):
     return low
     
 def rowMaxOnes(mat, n, m):
-    # Write your code here.
-	
+    """
+    We will iterate through each row and find the row with the highest no of 1s.
+
+    Time Complexity: O(nlgm)
+
+    Space Complexity: O(1)
+    """
     cnt = 0
     idx = -1
     for i in range(n):
