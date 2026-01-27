@@ -15,7 +15,24 @@ if USE_FILE:
     sys.stdout = open(os.path.join(BASE_DIR, "output.txt"), "w")
 
 def searchMatrixBetter( matrix: List[List[int]], target: int) -> bool:
+    """
+    Given a matrix which is sorted row an column wise, search if a target exists or not if exists
+    return True else False
 
+    Algorithm:
+    - Given the matrix is sorted row wise we can check each row whether the target is in range or not,
+    if the target is in the range of a particaulr we can don binary search on that row.
+
+    Args:
+        matrix: 2d matrix which is our search space
+        target: elements that needs to find
+
+    Returns: returns true if element exists else false
+
+    Time Complexity: O(n+lgm)
+
+    Space Complexity: O(1)
+    """
     n = len(matrix)
 
     for i in range(n):
@@ -37,6 +54,26 @@ def searchMatrixBetter( matrix: List[List[int]], target: int) -> bool:
     return False
 
 def searchMatrix( matrix: List[List[int]], target: int) -> bool:
+    """
+    Given matrix and target return if the return if that target exists in the matrix or not
+
+    Algorithm:
+    - we stand at the top most right corner, now the column is sorted and we are at the maximum of
+    that row.
+    - we will check whether the target is greater than the corner position, if that is greater means we
+    can definitely say we cant find that element in that row, if it is smaller we will move left.
+
+    Args:
+        matrix: 2d matrix which is our search space
+        target: elements that needs to find
+
+    Returns: returns true if element exists else false
+
+    Time Complexity: O(n+m)
+
+    Space Complexity: O(1)
+
+    """
     n = len(matrix)
 
     m = len(matrix[0])
