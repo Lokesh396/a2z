@@ -188,6 +188,7 @@ input.txt|output.txt
 - [`BitManipulation/Basics/removeLastSetBit.py`](BitManipulation/Basics/removeLastSetBit.py)
 - [`BitManipulation/Basics/setIthBit.py`](BitManipulation/Basics/setIthBit.py)
 - [`BitManipulation/Basics/swapTwoNumbers.py`](BitManipulation/Basics/swapTwoNumbers.py)
+- [`BitManipulation/Basics/divide.py`](BitManipulation/Basics/divide.py)
 
 ### Recursion
 - Subsequences
