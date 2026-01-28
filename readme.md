@@ -13,6 +13,9 @@ Curated data-structures/algorithms solutions from striver a2z dsa sheet.
 - [Sortings](#sortings)
 - [Strings — Easy](#strings--easy)
 - [Strings — Medium](#strings--medium)
+- [Bit Manipulation](#bit-manipulation)
+- [Recursion](#recursion)
+- [Leetcode Contests](#leetcode-contests)
 
 ### Repository layout
 ```
@@ -26,6 +29,9 @@ LinkedLists/
   1D/              # Singly linked list basics
   2D/              # Doubly linked list basics
 Basic Hashing/     # Frequency maps and lookups
+BitManipulation/   # Bit tricks and bitwise patterns
+Recursion/         # Backtracking, subsets, and recursion practice
+LeetcodeContests/  # Contest problems and solutions
 Sortings/          # Classic sorting implementations
 Strings/           # String manipulation and parsing
 input.txt|output.txt
@@ -173,6 +179,48 @@ input.txt|output.txt
 - [`Strings/Medium/reverseWords.py`](Strings/Medium/reverseWords.py)
 - [`Strings/Medium/romanToInteger.py`](Strings/Medium/romanToInteger.py)
 - [`Strings/Medium/sortByFrequency.py`](Strings/Medium/sortByFrequency.py)
+
+### Bit Manipulation
+- [`BitManipulation/Basics/countSetBits.py`](BitManipulation/Basics/countSetBits.py)
+- [`BitManipulation/Basics/evenOrOdd.py`](BitManipulation/Basics/evenOrOdd.py)
+- [`BitManipulation/Basics/isPowerOfTwo.py`](BitManipulation/Basics/isPowerOfTwo.py)
+- [`BitManipulation/Basics/kthSetBit.py`](BitManipulation/Basics/kthSetBit.py)
+- [`BitManipulation/Basics/removeLastSetBit.py`](BitManipulation/Basics/removeLastSetBit.py)
+- [`BitManipulation/Basics/setIthBit.py`](BitManipulation/Basics/setIthBit.py)
+- [`BitManipulation/Basics/swapTwoNumbers.py`](BitManipulation/Basics/swapTwoNumbers.py)
+
+### Recursion
+- Subsequences
+  - [`Recursion/subsequences/binarystrings.py`](Recursion/subsequences/binarystrings.py)
+  - [`Recursion/subsequences/combinationSum.py`](Recursion/subsequences/combinationSum.py)
+  - [`Recursion/subsequences/combinationSum2.py`](Recursion/subsequences/combinationSum2.py)
+  - [`Recursion/subsequences/combinationSum3.py`](Recursion/subsequences/combinationSum3.py)
+  - [`Recursion/subsequences/letterCombination.py`](Recursion/subsequences/letterCombination.py)
+  - [`Recursion/subsequences/powerSet.py`](Recursion/subsequences/powerSet.py)
+  - [`Recursion/subsequences/subSetSum1.py`](Recursion/subsequences/subSetSum1.py)
+  - [`Recursion/subsequences/subsetSum2.py`](Recursion/subsequences/subsetSum2.py)
+  - [`Recursion/subsequences/subsetSumEqualsK.py`](Recursion/subsequences/subsetSumEqualsK.py)
+  - [`Recursion/subsequences/subsequencesWithSumK.py`](Recursion/subsequences/subsequencesWithSumK.py)
+- All Combos / Backtracking
+  - [`Recursion/allCombos/mColoring.py`](Recursion/allCombos/mColoring.py)
+  - [`Recursion/allCombos/nQueens.py`](Recursion/allCombos/nQueens.py)
+  - [`Recursion/allCombos/palindromePartitioning.py`](Recursion/allCombos/palindromePartitioning.py)
+  - [`Recursion/allCombos/ratInMaze.py`](Recursion/allCombos/ratInMaze.py)
+  - [`Recursion/allCombos/sudokuSolver.py`](Recursion/allCombos/sudokuSolver.py)
+  - [`Recursion/allCombos/wordBreak.py`](Recursion/allCombos/wordBreak.py)
+  - [`Recursion/allCombos/wordSearch.py`](Recursion/allCombos/wordSearch.py)
+- Strong Hold
+  - [`Recursion/strongHold/atoi.py`](Recursion/strongHold/atoi.py)
+  - [`Recursion/strongHold/power.py`](Recursion/strongHold/power.py)
+  - [`Recursion/strongHold/reverseStack.py`](Recursion/strongHold/reverseStack.py)
+  - [`Recursion/strongHold/sortStack.py`](Recursion/strongHold/sortStack.py)
+
+### Leetcode Contests
+- Weekly Contest 486
+  - [`LeetcodeContests/weekly-contest-486/minPrefixRemoval.py`](LeetcodeContests/weekly-contest-486/minPrefixRemoval.py)
+  - [`LeetcodeContests/weekly-contest-486/nSmallestWithKBits.py`](LeetcodeContests/weekly-contest-486/nSmallestWithKBits.py)
+  - [`LeetcodeContests/weekly-contest-486/pythogoreanDistancenodeTree.py`](LeetcodeContests/weekly-contest-486/pythogoreanDistancenodeTree.py)
+  - [`LeetcodeContests/weekly-contest-486/rotateNonNegative.py`](LeetcodeContests/weekly-contest-486/rotateNonNegative.py)
 
 ### Browse & publish tips
 - Open code links directly in VS Code or the GitHub web UI to review implementations.
