@@ -189,6 +189,12 @@ input.txt|output.txt
 - [`BitManipulation/Basics/setIthBit.py`](BitManipulation/Basics/setIthBit.py)
 - [`BitManipulation/Basics/swapTwoNumbers.py`](BitManipulation/Basics/swapTwoNumbers.py)
 - [`BitManipulation/Basics/divide.py`](BitManipulation/Basics/divide.py)
+- Interview Problems
+  - [`BitManipulation/interviewProblems/LToRXor.py`](BitManipulation/interviewProblems/LToRXor.py)
+  - [`BitManipulation/interviewProblems/minFlips.py`](BitManipulation/interviewProblems/minFlips.py)
+  - [`BitManipulation/interviewProblems/singleNumber.py`](BitManipulation/interviewProblems/singleNumber.py)
+  - [`BitManipulation/interviewProblems/singleNumberIII.py`](BitManipulation/interviewProblems/singleNumberIII.py)
+  - [`BitManipulation/interviewProblems/subsets.py`](BitManipulation/interviewProblems/subsets.py)
 
 ### Recursion
 - Subsequences
