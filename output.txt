@@ -1,1 +1,1 @@
-is power of two: True
+Divide with out / % * 3740596
