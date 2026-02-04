@@ -1,1 +1,10 @@
-valid parentheses  False
+f ['f']
+e ['f', 'e']
+d ['f', 'e', 'd']
++ ['f', 'de+']
+* ['de+f*']
+b ['de+f*', 'b']
+a ['de+f*', 'b', 'a']
+- ['de+f*', 'ab-']
+/ ['ab-de+f*/']
+prefix to postfix: ab-de+f*/
