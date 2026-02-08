@@ -1,1 +1,1 @@
-sum of subarray ranges: 4
+largest rectangle area: 4
