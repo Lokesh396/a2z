@@ -14,7 +14,19 @@ if USE_FILE:
     sys.stdin = open(os.path.join(BASE_DIR, "input.txt"), "r")
     sys.stdout = open(os.path.join(BASE_DIR, "output.txt"), "w")
 def upperBound(arr, t, n):
+    """
+    Given an array and target, return the upper bound of the target.
 
+    Algorithm:
+    - Do binary search on the search and eliminate the search space accordingly.
+
+    Args:
+        arr: input array
+        t: target
+        n: length of the array
+    
+    Returns: returns the upper bound of the target.
+    """
     low = 0
     high = n -1
     while low <= high:
@@ -28,6 +40,9 @@ def upperBound(arr, t, n):
     return low
 
 def countSmallEquals(matrix, m, n, mid):
+    """
+    Counting number of elements smaller than the given target.
+    """
     cnt = 0
     for idx, row in enumerate(matrix):
         less = upperBound(row, mid,n)
@@ -35,6 +50,25 @@ def countSmallEquals(matrix, m, n, mid):
     return cnt
 
 def median(matrix: List[int], m: int, n: int) -> int:
+    """
+    Given an row wise sorted matrix, return the median of the array
+
+    Algorithm:
+    - we will find the search space first bu finding the minimum and maximum element in the matrix.
+    - After we will calculate the mid and serach for lessthan equals, if the less than equals or less
+    than threshold, we will update low, else the high.
+
+    Args:
+        matrix: matrix array
+        m: length of the matrix
+        n: width of the matrix
+    
+    Returns: returns the median of the matrix
+
+    Time Complexity: lg(mx) * nlgm
+
+    Space Complexity: O(1)
+    """
     # Write your code here.
     low = 1e9
     high = 0

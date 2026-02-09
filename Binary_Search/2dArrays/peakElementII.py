@@ -15,6 +15,23 @@ if USE_FILE:
     sys.stdout = open(os.path.join(BASE_DIR, "output.txt"), "w")
     
 def findMaxinCol( matrix,n, col):
+    """
+    Given an matrix and the column, we need to find the maximum value in that col.
+
+    Algorithm:
+    - Iterate through the column and update the index accordingly.
+
+    Args:
+        matrix: 2d matrix
+        n: length of matrix
+        col: column index
+    Returns: returns the idx of the col with max element.
+
+    Time Complexity: O(n)
+
+    Space Complexity: O(1)
+
+    """
     mx = matrix[0][col]
     idx = 0
     for i in range(1,n):
@@ -25,6 +42,25 @@ def findMaxinCol( matrix,n, col):
     return idx
 
 def findPeakGrid( matrix: List[List[int]]) -> List[int]:
+
+    """
+    Given a matrix, we need to find the peak element such that left, right, top and bottom is less than
+    the element.
+
+    Algorithm:
+    - we will start from left to right, and we pick the mid and find the maximum row in that column,
+    and check whether left and right element is smaller than the picked element.
+    - we need to eliminate the search space accordingly.
+
+    Args:
+        matrix: input 2d array
+    
+    Returns: returns the index of the peak element exists.
+
+    Time Complexity:  O(mlgn)
+
+    Space Complexity: O(1)
+    """
 
     low = 0
     n = len(matrix)

@@ -14,6 +14,23 @@ if USE_FILE:
     sys.stdout = open(os.path.join(BASE_DIR, "output.txt"), "w")
 
 def largestOddNumber(num: str) -> str:
+    """
+    we need to find the largest odd number in the string.
+
+    Algorithm:
+    - we will iterate through the array from back and check whether the char is odd or not, 
+    if odd we will return it else decrement right by 1.
+
+    Args:
+        num: input number
+
+    Returns: returns the largest odd number.
+
+    Time Complexity: O(n)
+
+    Space Complexity O(1)
+
+    """
     right = len(num)-1
 
     while right >= 0:

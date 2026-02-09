@@ -1,1 +1,1 @@
-maximal rectangle area: 6
+Reverse Words: blue is sky
