@@ -14,6 +14,23 @@ if USE_FILE:
     sys.stdout = open(os.path.join(BASE_DIR, "output.txt"), "w")
 
 def rotateString(s: str, goal: str) -> bool:
+    """
+    we need to check whether string1 is roated by some places to form goal
+
+    Algorithm:
+    - we will compare lengths first, if lengths dont macth so it is not a rotation.
+    - we will just check if goal present in s + s, it covers all rotations.
+
+    Args:
+        s: input string
+        goal: goal
+    
+    Returns: returns true if possible else false
+
+    Time Complexity: O(n)
+
+    Space Complexity:O(2n)
+    """
     if len(s) != len(goal): return False
 
     if s == goal:

@@ -13,6 +13,23 @@ if USE_FILE:
     sys.stdin = open(os.path.join(BASE_DIR, "input.txt"), "r")
     sys.stdout = open(os.path.join(BASE_DIR, "output.txt"), "w")
 def isAnagram( s: str, goal: str) -> bool:
+    """
+    Given two strings we need to check whether both strings are anagram of each other.
+
+    Algorithm:
+    - we will use 26 length arrays and increment by 1 based on ascii values,
+    - we will compare if both hashes has same values and return true if exists, else false.
+
+    Args:
+        - s: string 1
+        - t: string 2
+    
+    Returns: returns true or false
+
+    Time Complexity: O(n)
+
+    Space Complexity: O(1)
+    """
     if len(s) != len(goal): return False
 
     hash1 = [0 for i in range(26)]

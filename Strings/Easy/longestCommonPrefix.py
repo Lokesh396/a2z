@@ -15,7 +15,22 @@ if USE_FILE:
     sys.stdout = open(os.path.join(BASE_DIR, "output.txt"), "w")
 
 def longestCommonPrefix( strs: List[str]) -> str:
-        
+    """
+    Given an array of strings, we need to return the maximum length common prefix.
+
+    Algorithm:
+    - we need to find the min length string in the array which is the maximum length possible.
+    - we will iterate through all the strings and match each char and update the length accordingly.
+
+    Args:
+        strs: input string array
+    
+    Returns: returns the maximum length common prefix
+
+    Time Complexity: O(minLen(strs)*n)
+
+    Space Complexity: O(1)
+    """
     minlen = 201
 
     for word in strs:

@@ -13,6 +13,14 @@ if USE_FILE:
     sys.stdin = open(os.path.join(BASE_DIR, "input.txt"), "r")
     sys.stdout = open(os.path.join(BASE_DIR, "output.txt"), "w")
 def isIsomorphic(s: str, t: str) -> bool:
+    """
+    Given two strings we need to return true if both strings are isomorphic to each other.
+
+    Algorithm:
+    - we will go through the string and check whether the charachter is already present in the
+      reference map, if present we check if both macthes or not.
+    - if characther is not present we will map to the t[i] if t[i] is not already taken.
+    """
     referenceMap = {}
     alreadyPicked = set()
     for i in range(len(s)):
