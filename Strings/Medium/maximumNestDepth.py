@@ -14,6 +14,23 @@ if USE_FILE:
     sys.stdout = open(os.path.join(BASE_DIR, "output.txt"), "w")
 
 def maxDepth( s: str) -> int:
+    """
+    we need to return the maximum depth of parenthesis,
+
+    Algorithm:
+    - we will increment the local depth until we encounter a close brace, we will update the gmax and
+    decrement the local depth.
+    - we finally return the gmax.
+
+    Args:
+        s: input string
+    
+    Returns: returns the maximum deopth
+
+    Time Complexity: O(n)
+
+    Space Complexity: O(1)
+    """
     p = 0
     gmax = 0
     for c in s:

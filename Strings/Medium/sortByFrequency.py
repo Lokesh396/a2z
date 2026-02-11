@@ -16,6 +16,22 @@ if USE_FILE:
     sys.stdout = open(os.path.join(BASE_DIR, "output.txt"), "w")
 
 def frequencySort(s: str) -> str:
+    """
+    Given a string return the string after sorting s based on increasing frequency.
+
+    Algorithm:
+    - we will store the frequency of charachter in increasing frequency in a heap(maxheap)
+    - we will create the new string after popping from the heap until heap is empty.
+
+    Args:
+        s: input string
+    
+    Returns: returns the strings after sorting.
+
+    Time Complexity: O(n)
+
+    Space Complexity: O(1)
+    """
     heap = []
     frequency = Counter(s)
     for k, v in frequency.items():
