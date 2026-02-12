@@ -15,6 +15,8 @@ Curated data-structures/algorithms solutions from striver a2z dsa sheet.
 - [Strings — Medium](#strings--medium)
 - [Bit Manipulation](#bit-manipulation)
 - [Recursion](#recursion)
+- [Sliding Window — Medium](#sliding-window--medium)
+- [Stack and Queues](#stack-and-queues)
 - [Leetcode Contests](#leetcode-contests)
 
 ### Repository layout
@@ -31,6 +33,8 @@ LinkedLists/
 Basic Hashing/     # Frequency maps and lookups
 BitManipulation/   # Bit tricks and bitwise patterns
 Recursion/         # Backtracking, subsets, and recursion practice
+Slidingwindow/     # Sliding window patterns
+StackAndQueues/    # Stack/queue fundamentals and patterns
 LeetcodeContests/  # Contest problems and solutions
 Sortings/          # Classic sorting implementations
 Strings/           # String manipulation and parsing
@@ -220,7 +224,50 @@ input.txt|output.txt
   - [`Recursion/strongHold/atoi.py`](Recursion/strongHold/atoi.py)
   - [`Recursion/strongHold/power.py`](Recursion/strongHold/power.py)
   - [`Recursion/strongHold/reverseStack.py`](Recursion/strongHold/reverseStack.py)
-  - [`Recursion/strongHold/sortStack.py`](Recursion/strongHold/sortStack.py)
+- [`Recursion/strongHold/sortStack.py`](Recursion/strongHold/sortStack.py)
+
+### Sliding Window — Medium
+- [`Slidingwindow/Medium/fruitsIntoBasket.py`](Slidingwindow/Medium/fruitsIntoBasket.py)
+- [`Slidingwindow/Medium/longestRepatingCharactherReplacement.py`](Slidingwindow/Medium/longestRepatingCharactherReplacement.py)
+- [`Slidingwindow/Medium/longestSubstringWithoutRepeating.py`](Slidingwindow/Medium/longestSubstringWithoutRepeating.py)
+- [`Slidingwindow/Medium/maxConsecutiveOnesIII.py`](Slidingwindow/Medium/maxConsecutiveOnesIII.py)
+
+### Stack and Queues
+Learning:
+- [`StackAndQueues/Learning/minStack.py`](StackAndQueues/Learning/minStack.py)
+- [`StackAndQueues/Learning/queueLinkedList.py`](StackAndQueues/Learning/queueLinkedList.py)
+- [`StackAndQueues/Learning/queueWithArray.py`](StackAndQueues/Learning/queueWithArray.py)
+- [`StackAndQueues/Learning/queuesUsingStack.py`](StackAndQueues/Learning/queuesUsingStack.py)
+- [`StackAndQueues/Learning/stackLinkedList.py`](StackAndQueues/Learning/stackLinkedList.py)
+- [`StackAndQueues/Learning/stackUsingQueue.py`](StackAndQueues/Learning/stackUsingQueue.py)
+- [`StackAndQueues/Learning/stackWithArray.py`](StackAndQueues/Learning/stackWithArray.py)
+- [`StackAndQueues/Learning/validParenthesis.py`](StackAndQueues/Learning/validParenthesis.py)
+
+Implementation Problems:
+- [`StackAndQueues/ImplementationProblems/celebrityProblem.py`](StackAndQueues/ImplementationProblems/celebrityProblem.py)
+- [`StackAndQueues/ImplementationProblems/lruCache.py`](StackAndQueues/ImplementationProblems/lruCache.py)
+- [`StackAndQueues/ImplementationProblems/slidingWindowMaximum.py`](StackAndQueues/ImplementationProblems/slidingWindowMaximum.py)
+- [`StackAndQueues/ImplementationProblems/stockSpan.py`](StackAndQueues/ImplementationProblems/stockSpan.py)
+
+Monotonic Stack:
+- [`StackAndQueues/MonotomicStack.py/asteriodCollision.py`](StackAndQueues/MonotomicStack.py/asteriodCollision.py)
+- [`StackAndQueues/MonotomicStack.py/largestRectangleArea.py`](StackAndQueues/MonotomicStack.py/largestRectangleArea.py)
+- [`StackAndQueues/MonotomicStack.py/maximalRectangle.py`](StackAndQueues/MonotomicStack.py/maximalRectangle.py)
+- [`StackAndQueues/MonotomicStack.py/nextGreaterElementI.py`](StackAndQueues/MonotomicStack.py/nextGreaterElementI.py)
+- [`StackAndQueues/MonotomicStack.py/nextGreaterElementII.py`](StackAndQueues/MonotomicStack.py/nextGreaterElementII.py)
+- [`StackAndQueues/MonotomicStack.py/nextSmallerElement.py`](StackAndQueues/MonotomicStack.py/nextSmallerElement.py)
+- [`StackAndQueues/MonotomicStack.py/removeKDigits.py`](StackAndQueues/MonotomicStack.py/removeKDigits.py)
+- [`StackAndQueues/MonotomicStack.py/sumSubarrayMinimum.py`](StackAndQueues/MonotomicStack.py/sumSubarrayMinimum.py)
+- [`StackAndQueues/MonotomicStack.py/sumofSubarrayRanges.py`](StackAndQueues/MonotomicStack.py/sumofSubarrayRanges.py)
+- [`StackAndQueues/MonotomicStack.py/trappingRainWater.py`](StackAndQueues/MonotomicStack.py/trappingRainWater.py)
+
+Infix/Postfix/Prefix:
+- [`StackAndQueues/infixPostfixPrefix/infixPostfix.py`](StackAndQueues/infixPostfixPrefix/infixPostfix.py)
+- [`StackAndQueues/infixPostfixPrefix/infixtoPrefix.py`](StackAndQueues/infixPostfixPrefix/infixtoPrefix.py)
+- [`StackAndQueues/infixPostfixPrefix/postfixInfix.py`](StackAndQueues/infixPostfixPrefix/postfixInfix.py)
+- [`StackAndQueues/infixPostfixPrefix/postfixPrefix.py`](StackAndQueues/infixPostfixPrefix/postfixPrefix.py)
+- [`StackAndQueues/infixPostfixPrefix/prefixInfix.py`](StackAndQueues/infixPostfixPrefix/prefixInfix.py)
+- [`StackAndQueues/infixPostfixPrefix/prefixPostfix.py`](StackAndQueues/infixPostfixPrefix/prefixPostfix.py)
 
 ### Leetcode Contests
 - Weekly Contest 486
