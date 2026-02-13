@@ -15,6 +15,24 @@ if USE_FILE:
     sys.stdin = open(os.path.join(BASE_DIR, "input.txt"), "r")
     sys.stdout = open(os.path.join(BASE_DIR, "output.txt"), "w")
 
+def atmost(nums, k):
+        count = 0
+        left = 0
+        csum = 0
+        for right in range(len(nums)):
+            csum += nums[right]
+
+            while csum > k and left <= right:
+                csum -= nums[left]
+                left += 1
+
+            count += right - left + 1
+        
+        return count
+
+def numSubarraysWithSum1( nums: List[int], goal: int) -> int:
+    return atmost(nums, goal) - atmost(nums, goal-1)
+
 def numSubarraysWithSum( nums: List[int], goal: int) -> int:
         seen = defaultdict(int)
         seen[0] = 1
@@ -36,6 +54,7 @@ def main():
     arr = list(map(int, input().split()))
     goal = int(input())
     print('no. of subarrays with sum:', numSubarraysWithSum(arr, goal))
+    print('no. of subarrays with sum:', numSubarraysWithSum1(arr, goal))
     return 0
 
 if __name__ == "__main__":

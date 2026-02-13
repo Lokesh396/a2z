@@ -1,1 +1,2 @@
 no. of subarrays with sum: 10
+no. of subarrays with sum: 10
