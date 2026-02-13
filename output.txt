@@ -1,1 +1,1 @@
-longest repeating characther replacement: 7
+no. of subarrays with sum: 10
