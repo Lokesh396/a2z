@@ -1,1 +1,1 @@
-12
+ Longest substring with k different chars: 11
