@@ -1,1 +1,1 @@
-minWindow: aqw
+3th largest: 5
