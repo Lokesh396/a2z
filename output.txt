@@ -1,1 +1,1 @@
-3th largest: 5
+Array Transform: [1, 3, 2, 6, 5, 4]
