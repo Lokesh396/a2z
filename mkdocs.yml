@@ -1,0 +1,32 @@
+site_name: A2Z DSA Practice
+theme:
+  name: material
+  palette:
+    scheme: slate
+    primary: teal
+  features:
+    - content.code.copy
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      use_pygments: true
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.snippets:
+      base_path: .
+
+nav:
+  - Home: index.md
+  - Arrays: arrays.md
+  - Binary Search: binary-search.md
+  - Bit Manipulation: bit-manipulation.md
+  - Heap: heap.md
+  - Linked Lists: linked-lists.md
+  - Recursion: recursion.md
+  - Sliding Window: sliding-window.md
+  - Sortings: sortings.md
+  - Stack & Queues: stack-queues.md
+  - Strings: strings.md
+  - Hashing: hashing.md
+  - LeetCode Contests: contests.md
