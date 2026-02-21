@@ -14,6 +14,26 @@ if USE_FILE:
     sys.stdout = open(os.path.join(BASE_DIR, "output.txt"), "w")
 
 def reverseWords( s: str) -> str:
+
+    """
+    Given a string we need to rotate the string by words.
+
+    Algorithm:
+    - we start from the back and ignore the leading whitespaces and we store the first encountered
+    charachter.
+    - we will move the left until the window is valid, if we encounter a whitespace, thats the start
+    of the word, we store that word in the result.
+
+    Args:
+        - s: input string
+    
+    Returns: returns the string after reversing.
+
+    Time Complexity: O(n)
+
+    Space Complexity: O(n)
+    
+    """
     res = ''
 
     right = len(s) -1

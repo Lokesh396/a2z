@@ -14,6 +14,24 @@ if USE_FILE:
     sys.stdout = open(os.path.join(BASE_DIR, "output.txt"), "w")
 
 def romanToInt(s: str) -> int:
+    """
+    Given a string which is a roman numeral, we need to return the integer representation of the roman
+    numeral.
+
+    Algorithm:
+    - we start traversing the string from right and check for last 2 chars whether it is presnet in our
+    roman map if  it is present we will add that too our total and decrement by 2.
+    - else we add the last char value to the total.
+
+    Args:
+        - s: string representation of roman number
+    
+    Returns: returns the integer
+
+    Time Complexity: O(n)
+
+    Space Complexity: O(1)
+    """
     romanmap = {
         'I':1,
         'V':5,

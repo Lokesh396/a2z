@@ -15,6 +15,25 @@ if USE_FILE:
     sys.stdout = open(os.path.join(BASE_DIR, "output.txt"), "w")
 
 def atmostk(s, k):
+    """
+    Given a string we need to return the count of substring with at most k distinct characthers:
+
+    Algorithm:
+    - we will start iterating from the left and increment the char frequency by 1, at any point of time
+    if the chars in the frequency map exceeds the k we will shrink the substring from left.
+    - we will add all the valid substrings.
+    - finally we will return the substrings count.
+
+    Args: 
+        - s: input string
+        - k : distinct characther count
+    
+    Returns: returns the count of the valid substrings.
+
+    Time Complexity: O(n)
+
+    Space Complexity: O(k)
+    """
     left =  0
     right = 0
     cnt = 0
@@ -34,6 +53,8 @@ def atmostk(s, k):
     return cnt
 def countSubStrings(s: str, k: int) -> int:
     # Write your code here
+    # we call the function with k and k-1, as k contains all substrings with at most k distinct chars
+    # k- 1 contains substrings with atmost k-1 different chars, their substracts gives us exactly k.
     return atmostk(s, k) - atmostk(s, k-1)
 
 def main():
