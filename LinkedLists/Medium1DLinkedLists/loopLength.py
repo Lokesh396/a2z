@@ -40,6 +40,22 @@ def hasCycle(head):
     return None
 
 def lengthOfLoop(head: Node) -> int:
+    """
+    Given the starting point of cycle return the length of the cycle.
+
+    Algorithm:
+     - we will iterate from the next pointer unitl we we reaches the starting point and we increment
+     the count.
+     
+    Args:
+        - head: head of the linkedlist
+    
+    Returns: returns the length of the cycle
+
+    Time Complexity: O(n)
+
+    Space Complexity: O(1)
+    """
     # Write your code here
     slow = hasCycle(head)
 

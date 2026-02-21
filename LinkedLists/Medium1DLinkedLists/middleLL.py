@@ -23,6 +23,22 @@ class ListNode:
 
 class Solution:
     def middleNode(self, head: Optional[ListNode]) -> Optional[ListNode]:
+        """
+        Given the head of linkedlist return the middle of linked list.
+
+        Algorithm:
+        - we use hare and tortoise algo, as the slow pointer move 1 step, the fast pointer moves twice as
+        much as the slow, when the fast pointer reaches the end by that time slow is at middle.
+
+        Args:
+            - head: ListNode
+        
+        Returns: returns the middle of the linked list.
+
+        Time Complexity: O(n)
+
+        Space Complexity: O(1)
+        """
         slow = head
         fast = head
 

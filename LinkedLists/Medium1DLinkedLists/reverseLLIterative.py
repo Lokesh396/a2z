@@ -22,7 +22,22 @@ class ListNode:
 
 class Solution:
     def reverseList(self, head: Optional[ListNode]) -> Optional[ListNode]:
-        
+        """
+        Given the head of the Linkedlist we need to reverse the linkedlist and return the new head, we must
+        not create new nodes with the same values, references should be same.
+
+        Algorithm:
+        - we take prev as none and start with the current node, we will the save the next node and curr node
+        next will be the prev, as now current node becomes the prev and next node become the curr.
+        - finally we return the prev node which stores the new head.
+
+        Args:
+            - head: head of LinkedList
+
+        Time Complexity: O(n)
+
+        Space Complexity: O(1)
+        """
         prev = None
         curr = head
 
@@ -35,20 +50,7 @@ class Solution:
         return prev
 
 # Definition for singly-linked list.
-class ListNode:
-    def __init__(self, val=0, next=None):
-        self.val = val
-        self.next = next
-class Solution:
-    def reverse(self, curr, prev):
-        if not curr:
-            return prev
-        nxt = curr.next
-        curr.next = prev
-        return self.reverse(nxt, curr)
-    def reverseList(self, head: Optional[ListNode]) -> Optional[ListNode]:
-        
-        return self.reverse(head,None)
+
 
 def main():
     # -------------------------

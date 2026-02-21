@@ -35,7 +35,23 @@ class Solution:
         return [False, None]
 
     def detectCycle(self, head: Optional[ListNode]) -> Optional[ListNode]:
-        
+        """
+        Given the head of linkedlist return the starting point of the linked list if there is a cycle.
+
+        Algorithm:
+         - if we detect the cycle we will intialize a pointer at the head and traverse both pointers at
+         the same speed until they are not same.
+         - we will return the node they meet.
+
+        Args:
+            head: head of the linkedlist.
+    
+        Returns: returns the starting point of the linkedlist if exists else None
+    
+        Time Complexity: O(n)
+
+        Space Complexity: O(1)
+        """
         hasCycle, slow = self.hasCycle(head)
         if not hasCycle:
             return None

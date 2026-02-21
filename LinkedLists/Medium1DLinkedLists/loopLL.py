@@ -22,7 +22,23 @@ class ListNode:
 
 class Solution:
     def hasCycle(self, head: Optional[ListNode]) -> bool:
+        """
+        Given the head of the linked list we need to return whether there is a cycle.
+
+        Algorithm:
+         - we use the hare and tortoise algorithm, and check whether they meet at any point,
+         if they meet at a point then there is a cycle.
+         - if the fast pointer reaches the end it means there is no cycle.
         
+        Args:
+            - head: head node of the linked list.
+        
+        Returns: returns if a cycle exists or not
+
+        Time Complexity: O(n)
+
+        Space Complexity: O(1)
+        """
         slow = head
         fast = head
 
