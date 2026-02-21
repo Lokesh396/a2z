@@ -33,7 +33,24 @@ def reverse(head: Node) -> Node:
 
 def addOne(head: Node) -> Node:
     # write your code here
-    
+    """
+    Given the head of the linkedlist add 1 to the number, where each digit is stored as node.
+
+    Algorithm:
+     - we first revere the linkedlist and take 1 as our carry, we will try to add the carry to each digit
+     until there is no carry.
+     - after travering through entire linkedlist, if carry is there we will create new node and add 
+     to the tail and reverse the linkedlist again and return head.
+
+    Args:
+        - head: head of the linked list.
+
+    Returns: returns the head of the linkedlist
+
+    Time Complexity: O(n)
+
+    Space Complexity: O(1)
+    """
     head = reverse(head)
     carry = 1
 

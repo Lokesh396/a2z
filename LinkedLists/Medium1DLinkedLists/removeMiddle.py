@@ -23,7 +23,24 @@ class ListNode:
 
 class Solution:
     def deleteMiddle(self, head: Optional[ListNode]) -> Optional[ListNode]:
+        """
+        Given the head of the linkedlist delete the middle node
+
+        Algorithm:
+        - we use hare and tortoise algorithm and store the prev node, at the time fast reaches the end,
+        the slow is at the middle and the prev is at one step before the slow.
+        - if slow is same as head that means there is only one node.
+        - we will change the refrence of next node in the prev node.
+
+        Args:
+            - head:  head of the linkedlist
         
+        Returns: returns the head of the linkedlist
+
+        Time Complexity: O(n)
+
+        Space Complexity: O(1)
+        """
         slow = fast = head
         prev = None
 

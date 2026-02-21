@@ -21,6 +21,24 @@ class ListNode:
 
 class Solution:
     def sortList(self, head: ListNode) -> ListNode:
+        """
+        Given the head of the linkedlist return the head of linkedlist
+        after sorting.
+
+        Algorithm:
+        - we traverse until there is exactly one element or no elements.
+        - we find the middle and divide them into two lists and we will repeat until step1.
+
+        Args:
+            - head: head of the linkedlist
+
+        Returns: returns the head of linkedlist after sorting
+
+        Time Complexity: O(nlgn)
+
+        Space Complexity: O(1)
+
+        """
         if not head or not head.next:
             return head
         
@@ -40,6 +58,26 @@ class Solution:
         return self.merge(left, right)
     
     def merge(self, l1: ListNode, l2: ListNode) -> ListNode:
+
+        """
+        Given heads of two sorted linkedlist, return the head of the linkedlist after
+        merging.
+
+        Algorithm:
+         - we start by creating create a dummy node and traverse until both head or valid,
+         we will do normal merge by comparing the elements in the both heads and update the
+         accordingly.
+         - finally we return the head of sorted linkedlist.
+
+         Args:
+            - l1: head of linkedlist 1
+            - l2: head of linkedlist 2
+        
+        Time Complexity: O(n)
+
+        Space Complexity: O(1)
+        """
+
         dummy = ListNode(0)
         tail = dummy
         

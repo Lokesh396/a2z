@@ -20,6 +20,28 @@ class Node:
         
 
 def sortList(head):
+    """
+    Given the head of linkedlist containing only 0'1, 1's and 2`s group zeroes, ones and twos together
+    and return the sorted list.
+
+    Algorithm:
+    - we will take three pointers one for each [0, 1, 2] head and tail and traverse through the 
+    linkedlist and update the pointers accordingly.
+    - twos tail will be pointing to None
+    - ones tail will be pointing to twos head
+    - zeores tail will be pointing to ones head
+
+    - we will finally return the head of the zeros.
+
+    Args:
+        - head: head of the linkedlist
+
+    Returns: returns the head of the linkedlist after sorting
+
+    Time Complexity: O(n)
+
+    Space Complexity: O(1)
+    """
     # Write your code here
     zeroes = Node(0)
     zeroTail = zeroes

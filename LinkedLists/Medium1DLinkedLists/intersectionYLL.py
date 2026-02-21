@@ -22,7 +22,25 @@ class ListNode:
 
 class Solution:
     def getIntersectionNode(self, headA: ListNode, headB: ListNode) -> Optional[ListNode]:
+        """
+        Given the heads of two linkedlist we need to return the intersection point of that linkedlist.
+
+        Algorithm:
+         - we find the length of two linkedlists and find the absolute difference between their
+         lengths, and traverse the largest array by that many steps.
+         - we now traverse the both lists simulatenously if they are at the same reference that
+         that is the interseciton, if we reach the end  then there is no intersection.
+
+        Args:
+            - headA: head of the linkedlist 1
+            - headB: head of the linkedlist 2
         
+        Returns: returns the intersection point if there is intersection else None
+
+        Time Complexity: O(n)
+
+        Space COmplexity: O(1)
+        """
         headAL = 0
         headBL = 0
 

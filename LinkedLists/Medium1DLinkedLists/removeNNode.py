@@ -22,7 +22,24 @@ class ListNode:
         
 class Solution:
     def removeNthFromEnd(self, head: Optional[ListNode], n: int) -> Optional[ListNode]:
+        """
+        Given the head of the linked list remove n node from end.
+
+        Algorithm:
+         - we traverse n steps ahead, and take another pointer which starts from head, at the time
+         when the ahead pointer has no next and it becomes none, our second pointer will be standing at exactly before nth node.
+         - we just change the next pointer and our task is done.
+
+         Args:
+            head: head of linkedlist
+            n: node to be delete
         
+        Returns: returns the head afte the n node.
+
+        Time Complexity: O(n)
+
+        Space Complexity: O(1)
+        """
         ahead = wait = head
 
         for i in range(n):

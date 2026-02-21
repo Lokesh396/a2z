@@ -24,7 +24,27 @@ class Solution:
 
 
     def addTwoNumbers(self, l1: Optional[ListNode], l2: Optional[ListNode]) -> Optional[ListNode]:
+        """
+        Given head of two linked lists, add them together and return the new head.
 
+        Algorithm:
+         - we will traverse until one of the l1 or l2 is valid, we create new node with 
+         (l1 + l2 + carry) % 10 and update the carry as (l1 + l2 + carry) // 10
+         - we will update the l1 and l2 until both are invalid.
+         - even after traversing if the carry still exists we create a new node and add
+         them to the tail.
+
+        Args:
+            - l1: head of linkedlist 1
+            - l2: head of linkedlist 2
+        
+        Returns: returns the head of the new linkedlist.
+
+        Time Complexity: O(n)
+
+        Space Complexity: O(n)
+
+        """
         carry = 0
         head = l1
         dummy = ListNode(-1)
