@@ -42,6 +42,23 @@ class Solution:
         return prev
 
     def isPalindrome(self, head: Optional[ListNode]) -> bool:
+        """
+        Given an linkedlist we need to check whether the linkedlist is palindrome or not.
+
+        Algorithm:
+        - we wil find element and the reverse the list from middle element.
+        - we will traverse through the linkedlist and check whether both nodes has same value or not.
+        - if we reach the end of one node atleast then that means that is a a palindrome.
+
+        Args:
+            - head: head of the LinkedList
+        
+        Returns: returns true if linkedlist is palindrome else false
+
+        Time Complexity: O(n)
+
+        Space Complexity: O(1)
+        """
         
         middle = self.middle(head)
         reverseHead = self.reverse(middle)

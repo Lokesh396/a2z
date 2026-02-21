@@ -22,6 +22,22 @@ class ListNode:
 
 class Solution:
     def oddEvenList(self, head: Optional[ListNode]) -> Optional[ListNode]:
+        """
+        Given head of the linkedlist we need return new head after reordering by maintaing relative
+        order of elements in the linkedlist, first element is considered as odd element.
+
+        Algorithm:
+         - we take odd as head and even as head.next, we will continue until even and even.next is available
+         - odd.next is eve.next and we updated the odd, even.next is odd.next
+         - finally we will link odd.next with evenhead
+
+        Args:
+            - head: head of linked list
+        
+        Time Complexity: O(n)
+
+        Space Complexity: O(1)
+        """
         if not head:
             return head
         odd = head
