@@ -1,1 +1,2 @@
-valid string: True
+minimum Jumps: 4
+minimum Jumps: 4
