@@ -1,2 +1,1 @@
-minimum Jumps: 4
-minimum Jumps: 4
+Jobs and Profit: [6, 112]
