@@ -1,1 +1,2 @@
-candy: 13
+[[1, 2], [2, 4], [2, 5], [3, 6], [5, 7], [6, 8]]
+Minimum erasing intervals: 3
