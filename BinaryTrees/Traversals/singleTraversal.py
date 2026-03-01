@@ -1,7 +1,7 @@
 import sys
 import os
 from pathlib import Path
-from typing import Optional, List
+from typing import Optional, List   
 
 # Fast I/O and Recursion Setup
 sys.setrecursionlimit(2000)
@@ -14,6 +14,7 @@ if USE_FILE:
     sys.stdin = open(os.path.join(BASE_DIR, "input.txt"), "r")
     sys.stdout = open(os.path.join(BASE_DIR, "output.txt"), "w")
 
+
 # Definition for a binary tree node.
 class TreeNode:
     def __init__(self, val=0, left=None, right=None):
@@ -21,37 +22,32 @@ class TreeNode:
         self.left = left
         self.right = right
 class Solution:
-    def postorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
-        
-        def postorder(root, out):
-            if not root:
-                return out
-            
-            postorder(root.left, out)
-            postorder(root.right, out)
-            out.append(root.val)
-            return out
-        
-        return postorder(root, [])
-    def postorderTraversalIter(self, root: Optional[TreeNode]) -> List[int]:
+    def Traversal(self, root: Optional[TreeNode]) -> List[int]:
         if not root:
             return []
-        stk1 = []
-        stk2 = []
-        stk1.append(root)
+        preorder = []
+        postorder = []
+        inorder = []
+        stack = [[root, 1]]
 
-        while stk1:
-
-            curr = stk1.pop()
-            if curr.left:
-                stk1.append(curr.left)
-            if curr.right:
-                stk1.append(curr.right)
-            
-            stk2.append(curr.val)
+        while stack:
+            top = stack[-1]
+            if top[1] == 1:
+                preorder.append(top[0].val)
+                stack[-1][1] += 1
+                if top[0].left:
+                    stack.append([top[0].left,1])
+            elif top[1] == 2:
+                inorder.append(top[0].val)
+                stack[-1][1] += 1
+                if top[0].right:
+                    stack.append([top[0].right, 1])
+            else:
+                postorder.append(top[0].val)
+                stack.pop()
         
-        stk2.reverse()
-        return stk2
+        return postorder
+    
 def main():
     # -------------------------
     # WRITE YOUR LOGIC BELOW

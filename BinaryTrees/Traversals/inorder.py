@@ -33,7 +33,26 @@ class Solution:
             return out
         
         return inorder(root, [])
-    
+    def inorderTraversalIter(self, root: Optional[TreeNode]) -> List[int]:
+        stack = []
+        inorder = []
+        node = root
+
+        while True:
+
+            if node is not None:
+                stack.append(node)
+            
+                node = node.left
+            else:
+                if not stack:
+                    break
+
+                node = stack.pop()
+                inorder.append(node.val)
+                node = node.right
+        
+        return inorder
 def main():
     # -------------------------
     # WRITE YOUR LOGIC BELOW
