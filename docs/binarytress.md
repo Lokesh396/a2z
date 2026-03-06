@@ -83,3 +83,10 @@
 ```python
 --8<-- "BinaryTrees/Medium/symmetricTree.py"
 ```
+
+## Hard
+
+### binaryTreepath
+```python
+--8<-- "BinaryTrees/Hard/binaryTreepaths.py"
+```
