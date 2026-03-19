@@ -14,6 +14,29 @@ if USE_FILE:
     sys.stdout = open(os.path.join(BASE_DIR, "output.txt"), "w")
     
 def strtoint(s, i, final, sign) -> List[int]:
+    """
+    Leetcode 8
+
+    Algorithm:
+     - the string will contans either + or - , and integers or some chars
+     - we need to reutrn the valid integer that can be constructed until we a encounter invalid string or we
+     reach the end of string.
+     - if we get (+ or -), we will add that to our sign only if the sign and final number currently is zero and
+     we are at the start of the string.
+     - if we encounter a digit we will multiply the final by 10 andd the current digit. else we return the
+     current sign and final string.
+
+    Args:
+        s: string
+        i: index
+        final: final integer
+        sign: sign (+ or -)
+        
+    Returns: returns [sign, final]
+
+    Time Complexity: O(n)
+    Space Complexity:O(n)
+    """
     if i >= len(s):
         return [final, sign]
     

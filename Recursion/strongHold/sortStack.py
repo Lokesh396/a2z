@@ -14,7 +14,22 @@ if USE_FILE:
     sys.stdin = open(os.path.join(BASE_DIR, "input.txt"), "r")
     sys.stdout = open(os.path.join(BASE_DIR, "output.txt"), "w")
 def insert(stack, val):
-    if not stack:
+    """
+    we will pop elements in the stack when an new element is arrived until there is no elemens or the top
+     value of stack is less than the new element and append that value
+    in the stack first, and we push back elements into the stack from last popped to first.
+
+    Args:
+        Stack: stack holding elements
+        val: new val to push into stack.
+
+    Returns: None
+
+    Time Complexity : O(n^2)
+
+    Space Complexity : O(n)
+    """
+    if not stack or stack[-1] <= val:
         stack.append(val)
         return
     temp = stack.pop()
@@ -23,6 +38,22 @@ def insert(stack, val):
 
 def reverseStack(stack: List[int]) -> None:
     # Write your code here.
+    """
+    Given a stack sort the values in the stack.
+
+    Algorithm:
+     - we will recursively pop elements from the stack until there is no elements and pass the same stack to the insert
+     function which will order the elements in the stack.
+      
+    Args:
+        stack: input stack
+    
+    Retuns: None
+
+    Time Complexity: O(n)
+
+    Space Complexity:O(n)
+    """
     if stack:
         val = stack.pop()
         reverseStack(stack)
