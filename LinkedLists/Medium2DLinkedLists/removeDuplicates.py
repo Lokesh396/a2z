@@ -25,6 +25,29 @@ class Node:
 
 
 def deleteAllOccurrences(head: Node, k: int) -> Node:
+    """
+    You're given a doubly-linked list and a key 'k'.
+    Delete all the nodes having data equal to 'k'.
+
+    Algorithm:
+     - we create a dummy node and add head to the dummy next.
+     - we will iterate through the linkedlist and check if the next nodes value
+     is same as the given k, if the value is same as the given k we will move
+     the current nodes next pointer to its next's next, the next's next prev
+     to the curr node.
+     - if the node.next value is not same we will move forward.
+
+     Args:
+        head: head of the linkedlist
+        k : value of the node that needs to be deleted.
+    
+    Returns: returns the new head after deleting the nodes.
+
+    Time Complexity: O(n)
+
+    Space Complexity: O(1)
+
+    """
     # Write your code here
     dummy = Node(0)
     head1 = dummy

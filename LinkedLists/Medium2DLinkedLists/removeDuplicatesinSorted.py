@@ -25,11 +25,31 @@ class Node:
 
 def removeDuplicates(head: Node) -> Node:
     # Write your code here
+    """
+    You are given a sorted doubly linked list of size 'n'.
+    Remove all the duplicate nodes present in the linked list.
+
+    Algorithm:
+    - we will create a dummy node and traverse until head is valid.
+    - if the value of dummy and head doesn't match we will append
+    the node to the dummy and head.prev as the dummy
+    - if the value is same as the previous we will move forward
+
+    Args:
+        head: head of the doubly linkedlist
+    
+    Returns: returns the new head
+
+    Time Complexity: O(n)
+    
+    Space Complexity: O(1)
+    """
     dummy = Node(0)
     newhead = dummy
     while head:
         if dummy.data != head.data:
             dummy.next = head
+            head.prev = dummy
             head = head.next
             dummy = dummy.next
         else:

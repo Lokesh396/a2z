@@ -25,7 +25,27 @@ class Node:
 
 
 def findPairs(head: Node, k: int) -> List[int]:
+    """
+    You are given a sorted doubly linked list of size 'n',
+    consisting of distinct positive integers, and a number 'k'.
+    Find out all the pairs in the doubly linked list with sum equal to 'k'.
 
+    Algorithm:
+    - Given the doubly linked list is sorted the problem boils down to 2sum
+    - find the tail pointer and now we have  two pointers head and tail.
+    - we will traverse from left and from the back until they dont meet.
+    - we add our pairs to the ans if the value of left and right pointer equals to the k.
+    - we move to next and prev accordingly.
+
+    Args:
+        head: head of the linkedlist
+    
+    Returns: returns the pairs with given sum
+
+    Time Complexity: O(n)
+
+    Space Complexity: O(n)
+    """
     # Write your code here.
     # Return boolean true or false.
     temp = head

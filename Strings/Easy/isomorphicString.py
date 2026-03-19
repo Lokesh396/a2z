@@ -20,6 +20,17 @@ def isIsomorphic(s: str, t: str) -> bool:
     - we will go through the string and check whether the charachter is already present in the
       reference map, if present we check if both macthes or not.
     - if characther is not present we will map to the t[i] if t[i] is not already taken.
+    - finally we return true
+
+    Args:
+        s : input string 1
+        t : input string 2
+    
+    Returns: returns a boolean whether the strings are isomorphic or not
+
+    Time Complexity: O(n)
+
+    Space Complexity: O(n)
     """
     referenceMap = {}
     alreadyPicked = set()
