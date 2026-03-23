@@ -14,7 +14,13 @@ if USE_FILE:
     sys.stdin = open(os.path.join(BASE_DIR, "input.txt"), "r")
     sys.stdout = open(os.path.join(BASE_DIR, "output.txt"), "w")
 
-def numEnclaves( grid: List[List[int]]) -> int:
+def numEnclaves(grid: List[List[int]]) -> int:
+        """
+        Pattern: DFS / Flood Fill from Boundary
+        Difficulty: Medium
+        Key Insight: Any land connected to the border can't be an enclave — flood fill from all border cells first, then count remaining land.
+        Related: surroundingRegions.py, floodFill.py
+        """
         m = len(grid)
         n = len(grid[0])
 
