@@ -16,7 +16,12 @@ if USE_FILE:
     sys.stdout = open(os.path.join(BASE_DIR, "output.txt"), "w")
 
 def orangesRotting( grid: List[List[int]]) -> int:
-    
+    """
+    Pattern: Multi-Source BFS
+    Difficulty: Medium
+    Key Insight: Seed all rotten oranges into the queue at t=0 — BFS spreads rot level by level, answer is max time when the last fresh orange rots.
+    Related: matrix01.py, wordLadder.py
+    """
     q = deque()
     m = len(grid)
     n = len(grid[0])

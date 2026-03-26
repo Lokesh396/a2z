@@ -16,11 +16,13 @@ if USE_FILE:
     sys.stdout = open(os.path.join(BASE_DIR, "output.txt"), "w")
 
 class Solution:
-    '''
-    missed to check not ocnnected components
-    we need to wait for all children before returning
-    '''
     def isBipartite(self, graph: List[List[int]]) -> bool:
+        """
+        Pattern: DFS / Graph 2-Coloring
+        Difficulty: Medium
+        Key Insight: Try to 2-color the graph — if any two adjacent nodes share the same color, it's not bipartite; handle disconnected components by iterating all nodes.
+        Related: cycleinUndirectedGraph.py
+        """
         adjList = defaultdict(list)
         for idx, val in enumerate(graph):
             adjList[idx] = val

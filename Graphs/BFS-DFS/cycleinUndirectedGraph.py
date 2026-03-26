@@ -43,7 +43,12 @@ class Solution:
     
         
     def isCycle(self, V, edges):
-        #Code here
+        """
+        Pattern: BFS / DFS Cycle Detection (Undirected Graph)
+        Difficulty: Medium
+        Key Insight: Track parent node — if a visited neighbor is NOT the parent, a back edge exists, indicating a cycle.
+        Related: cycleinDG.py
+        """
         adj = self.constructAdjList(edges)
         vis = [0 for i in range(V)]
         

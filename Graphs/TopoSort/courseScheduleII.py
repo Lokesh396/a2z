@@ -1,8 +1,8 @@
 import sys
 import os
 from pathlib import Path
-from collections import defaultdict
 from typing import List
+from collections import defaultdict
 
 # Fast I/O and Recursion Setup
 sys.setrecursionlimit(2000)
@@ -14,15 +14,21 @@ if USE_FILE:
     BASE_DIR = Path(__file__).resolve().parents[2]
     sys.stdin = open(os.path.join(BASE_DIR, "input.txt"), "r")
     sys.stdout = open(os.path.join(BASE_DIR, "output.txt"), "w")
-def eventualSafeNodes(graph: List[List[int]]) -> List[int]:
-        v = len(graph)
-        visited = [0 for _ in range(v)]
-        path = [0 for _ in range(v)]
+
+def findOrder(numCourses: int, prerequisites: List[List[int]]) -> List[int]:
+        """
+        Pattern: Topological Sort (DFS / Post-order)
+        Difficulty: Medium
+        Key Insight: DFS post-order appends a node only after all its dependents are finished — reversing that list gives a valid course order; return [] if a cycle is found.
+        Related: cycleinDG.py, eventualSafeNodes.py, alienDictionary.py
+        """
+        visited = [0 for _ in range(numCourses)]
+        path = [0 for _ in range(numCourses)]
         out =  []
 
         adjList = defaultdict(list)
-        for idx in range(v):
-            adjList[idx] = graph[idx]
+        for v, u in prerequisites:
+            adjList[u].append(v)
 
         def dfs(node):
             if path[node] != 0:
@@ -36,15 +42,16 @@ def eventualSafeNodes(graph: List[List[int]]) -> List[int]:
             for child in adjList[node]:
                 if dfs(child):
                     return True
+            out.append(node)
             path[node] = 0
             return False
 
 
-        for i in range(v):
-            if not dfs(i):
-                out.append(i)
+        for i in range(numCourses):
+            if dfs(i):
+                return []
 
-        return out
+        return out[::-1]
 
 def main():
     # -------------------------

@@ -16,7 +16,12 @@ if USE_FILE:
     sys.stdout = open(os.path.join(BASE_DIR, "output.txt"), "w")
 
     def canFinish( numCourses: int, prerequisites: List[List[int]]) -> bool:
-        
+        """
+        Pattern: DFS / Cycle Detection (Directed Graph)
+        Difficulty: Medium
+        Key Insight: Maintain a path set alongside visited — a cycle exists only if we revisit a node still on the current DFS path, not just any visited node.
+        Related: cycleinUndirectedGraph.py, courseScheduleII.py
+        """
         visited = [0 for _ in range(numCourses)]
         path = [0 for _ in range(numCourses)]
 

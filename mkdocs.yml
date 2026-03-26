@@ -29,4 +29,5 @@ nav:
   - Stack & Queues: stack-queues.md
   - Strings: strings.md
   - Hashing: hashing.md
+  - Graphs: graphs.md
   - LeetCode Contests: contests.md

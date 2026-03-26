@@ -16,6 +16,12 @@ if USE_FILE:
     sys.stdout = open(os.path.join(BASE_DIR, "output.txt"), "w")
 class Solution:
     def updateMatrix(self, mat: List[List[int]]) -> List[List[int]]:
+        """
+        Pattern: Multi-Source BFS
+        Difficulty: Medium
+        Key Insight: Start BFS from all 0-cells simultaneously and propagate distance outward — avoids TLE compared to running BFS from each 1-cell individually.
+        Related: rottingOranges.py
+        """
         rows, cols = len(mat), len(mat[0])
         dis = [[-1] * cols for _ in range(rows)]
 

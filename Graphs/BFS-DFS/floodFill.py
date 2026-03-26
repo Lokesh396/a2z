@@ -15,6 +15,12 @@ if USE_FILE:
     sys.stdout = open(os.path.join(BASE_DIR, "output.txt"), "w")
 
 def floodFill(image: List[List[int]], sr: int, sc: int, color: int) -> List[List[int]]:
+    """
+    Pattern: DFS / Flood Fill
+    Difficulty: Easy
+    Key Insight: DFS from the source pixel recolors all connected same-colored cells; early exit if source already equals the target color avoids infinite loop.
+    Related: islands.py, enclaves.py, surroundingRegions.py
+    """
     if image[sr][sc] == color:
         return image
     m = len(image)

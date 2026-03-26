@@ -24,6 +24,12 @@ class Solution:
                     adj[j].append(i)
         return adj
     def findCircleNum(self, isConnected: List[List[int]]) -> int:
+        """
+        Pattern: DFS / Connected Components
+        Difficulty: Medium
+        Key Insight: Each unvisited city starts a DFS that marks all reachable cities — one DFS call = one province.
+        Related: islands.py
+        """
         m = len(isConnected)
         adj = self.constructAdjList(isConnected, m)
 

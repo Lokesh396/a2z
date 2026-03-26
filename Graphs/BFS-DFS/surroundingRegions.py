@@ -17,7 +17,10 @@ if USE_FILE:
 class Solution:
     def solve(self, board: List[List[str]]) -> None:
         """
-        Do not return anything, modify board in-place instead.
+        Pattern: DFS / Boundary Flood Fill
+        Difficulty: Medium
+        Key Insight: Any 'O' touching the border can't be surrounded — DFS from all border 'O's first to mark them safe, then flip remaining 'O' to 'X'.
+        Related: enclaves.py, floodFill.py
         """
         m = len(board)
         n = len(board[0])

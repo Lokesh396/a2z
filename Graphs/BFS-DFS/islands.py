@@ -15,6 +15,12 @@ if USE_FILE:
     sys.stdout = open(os.path.join(BASE_DIR, "output.txt"), "w")
 
 def numIslands(self, grid: List[List[str]]) -> int:
+        """
+        Pattern: DFS / Flood Fill
+        Difficulty: Medium
+        Key Insight: Each DFS from an unvisited '1' sinks the whole island (marks cells '0'); count how many times DFS is triggered = number of islands.
+        Related: provinces.py, floodFill.py, enclaves.py
+        """
         m = len(grid)
         n = len(grid[0])
         def traverse(i, j):

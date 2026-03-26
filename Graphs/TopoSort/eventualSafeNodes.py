@@ -1,8 +1,8 @@
 import sys
 import os
 from pathlib import Path
-from typing import List
 from collections import defaultdict
+from typing import List
 
 # Fast I/O and Recursion Setup
 sys.setrecursionlimit(2000)
@@ -14,16 +14,21 @@ if USE_FILE:
     BASE_DIR = Path(__file__).resolve().parents[2]
     sys.stdin = open(os.path.join(BASE_DIR, "input.txt"), "r")
     sys.stdout = open(os.path.join(BASE_DIR, "output.txt"), "w")
-
-def findOrder(numCourses: int, prerequisites: List[List[int]]) -> List[int]:
-        
-        visited = [0 for _ in range(numCourses)]
-        path = [0 for _ in range(numCourses)]
+def eventualSafeNodes(graph: List[List[int]]) -> List[int]:
+        """
+        Pattern: DFS / Cycle Detection (Safe Node Identification)
+        Difficulty: Medium
+        Key Insight: A node is safe iff it is not part of a cycle and all its paths eventually terminate — reuse DFS path-tracking: safe = not in any cycle path.
+        Related: courseScheduleII.py, cycleinDG.py
+        """
+        v = len(graph)
+        visited = [0 for _ in range(v)]
+        path = [0 for _ in range(v)]
         out =  []
 
         adjList = defaultdict(list)
-        for v, u in prerequisites:
-            adjList[u].append(v)
+        for idx in range(v):
+            adjList[idx] = graph[idx]
 
         def dfs(node):
             if path[node] != 0:
@@ -37,16 +42,15 @@ def findOrder(numCourses: int, prerequisites: List[List[int]]) -> List[int]:
             for child in adjList[node]:
                 if dfs(child):
                     return True
-            out.append(node)
             path[node] = 0
             return False
 
 
-        for i in range(numCourses):
-            if dfs(i):
-                return []
+        for i in range(v):
+            if not dfs(i):
+                out.append(i)
 
-        return out[::-1]
+        return out
 
 def main():
     # -------------------------

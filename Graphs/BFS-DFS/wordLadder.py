@@ -16,6 +16,12 @@ if USE_FILE:
     sys.stdout = open(os.path.join(BASE_DIR, "output.txt"), "w")
 
 def ladderLength( beginWord: str, endWord: str, wordList: List[str]) -> int:
+    """
+    Pattern: BFS / Shortest Path (Word Graph)
+    Difficulty: Hard
+    Key Insight: Model as unweighted graph where edges connect words differing by one letter; BFS guarantees the fewest transformations.
+    Related: rottingOranges.py, matrix01.py
+    """
     wordset = set(wordList)
 
     q = deque()
