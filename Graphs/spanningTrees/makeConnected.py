@@ -1,7 +1,7 @@
 import sys
 import os
 from pathlib import Path
-
+from typing import List
 # Fast I/O and Recursion Setup
 sys.setrecursionlimit(2000)
 input = sys.stdin.readline
